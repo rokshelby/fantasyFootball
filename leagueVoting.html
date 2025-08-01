@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League Voting</title>
+    <link rel="stylesheet" href="leaguevotingstyles.css">
+</head>
+<body>
+    <header>
+        <h1>League Voting System</h1>
+    </header>
+    <main>
+        
+        <form id="managerForm"></form>
+        <p>
+            Please select your preferred options below and submit your vote.
+        </p>
+
+        <p>
+            Each manager will have one vote for each item listed below.
+        </p>
+
+        <p>
+            Note: Voting will close on August 15, 2025. Results will be announced on August 20, 2025.
+        </p>
+
+        <p>
+            If you have any questions or suggestions, please contact the league commissioner.
+        </p>
+
+        <p>
+            Thank you for participating in the league voting process!
+        </p>
+
+        <h3>Vote for League Changes</h3>
+
+        <!-- Name and Email -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <p>
+            <h5>Keeper League</h5>
+            <p>Description:</p>
+            Please vote on whether you would be interested in a keeper league for the 2026-2027 season. A keeper league allows you to retain a certain number of players from your current roster for the next season.
+            At the moment, we are considering a keeper league format where each team can keep up to 1 player from their current roster.
+            The way this would work would be that the player you keep would be able to be your keeper at that round in the next draft.
+            For example, if you keep a player who was drafted in the 3rd round, you would be able to draft them in the 3rd round of the next draft.
+        </p>
+         
+                <label for="keeperVote">Keeper League:</label>
+                <select id="keeperVote" name="keeperVote" reuqired>
+                    <option value="">-- Select an option --</option>
+                    <option value="yes">Yes</option>   
+                    <option value="no">No</option>
+                    <option value="maybe">Maybe</option>
+                    <option value="notsure">Not Sure</option>
+                    <option value="idc">I Don't Care</option>
+                </select>
+         
+
+        <p>
+            <h5>Thoughts on Weekly highscore</h5>
+            <p>Description:</p>
+            Please vote on whether you would like to continue the weekly highscore feature for the 2026-2027 season. The weekly highscore feature awards points to the team with the highest score each week.
+            This feature has been popular in the past and adds an extra layer of competition to the league.
+            If you have any suggestions for improving this feature, please include them in the comments section below
+        </p>
+                
+                <label for="weeklyVote">Keep Highscore:</label>
+                <select id="weeklyVote" name="weeklyVote" required>
+                    <option value="">-- Select an option --</option>
+                    <option value="yes">Yes</option>   
+                    <option value="no">No</option>
+                    <option value="maybe">Maybe</option>
+                    <option value="notsure">Not Sure</option>
+                    <option value="idc">I Don't Care</option>
+                </select>
+                
+
+        <p>
+            <h5>Waiver Wire System</h5>
+            <p>Description:</p>
+            Please vote on whether you would like to change the wavier wire system to a free agent budge system for the 2026-2027 season.
+            The current waiver wire system allows for managers to only lose their waiver wire priority only if they use before waivers run. If a manager 
+            waits for waivers to run, they will not lose their waiver wire priority.
+            The proposed free agent budget system would allow managers to bid on free agents using a budget that
+            is set at the beginning of the season. Each manager would have a budget of for example $100, and they would be able to bid on free agents using that budget.
+            The highest bidder would win the player, and the amount bid would be deducted from their budget.
+            This system would add an extra layer of strategy to the league, as managers would have to
+            manage their budget throughout the season and decide how much to bid on players.
+        </p>
+
+            
+                <label for="wavierVote">Waiver Wire</label>
+                <select id="wavierVote" name="wavierVote" required>
+                    <option value="">-- Select an option --</option>
+                    <option value="freeagentbudget">Free Agent Budget</option>
+                    <option value="keepcurrentsystem">Keep Current System</option>
+                    <option value="notsure">Not Sure</option>
+                    <option value="idc">I Don't Care</option>
+                </select>
+            
+
+        
+        <label for="note">Leave a note for the commissioner:</label><br>
+            <textarea id="note" name="note" rows="5" cols="40" placeholder="Enter your notes here..."></textarea><br><br>
+  
+        <button type="submit">Submit</button>
+        </form>
+            
+                   
+
+
+</html>
