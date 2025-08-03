@@ -1,0 +1,53 @@
+.nav-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  position: relative;
+  margin-right: 20px;
+}
+
+.dropdown-menu li {
+  padding: 5px;
+  background-color: white;
+  color: black;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 1000;
+  list-style: none;
+ 
+  margin: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+#morelink .arrow.up {
+  display: none;
+}
+
+.dropdown:hover #morelink .arrow.down {
+  display: none;
+}
+
+.dropdown:hover #morelink .arrow.up {
+  display: inline;
+} 
+
+
+
+li{
+    color: black;
+}
