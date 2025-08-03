@@ -1,182 +1,254 @@
-h1{
+/* Reset/Basic Styles */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
     text-align: center;
+    /* Most headings are centered */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+h3.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75em;
+}
+
+h5,
+h6 {
+    font-weight: 600;
+    margin-bottom: 0.4em;
+}
+
+h1,
+h2,
+h3.section-title {
+    text-align: center;
+
+}
+
+p,
+ol.draft-list li {
+    text-align: left;
+}
+
+p {
+    margin: 1em 0;
+}
+
+ol.draft-list li {
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #dddddd75;
+    /* Optional visual separator */
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Smooth scrolling for anchor links */
+    font-size: 100%;
+    /* Base font size */
+
+    box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 90%;
+        /* Slightly smaller font size on small screens */
+    }
 }
 
 
-.topnav{
-    width: 100%;
-    background-color: rgba(0,128, 0, 0.5);
-}   
 
-.second-nav{
-    width: 100%;
-    background-color: rgba(0,128, 0, 0.5);
+/* Layout Container */
+.layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-nav{
+
+
+/* Navigation */
+nav {
     display: flex;
     justify-content: space-between;
 }
-nav a{
-    
+
+nav a {
     text-decoration: none;
     padding: 10px;
-     white-space: nowrap;
+    white-space: nowrap;
+    color: #1e3a8a;
+    transition: color 0.3s ease;
+    font-weight: 600;
 }
 
-
-
-
-
-
-
-
-
-body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+nav a:hover {
+    color: #3b82f6;
 }
 
-h2{
-    text-align: center;
+nav a.active {
+    color: rgb(255, 102, 0);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(255, 102, 0);
 }
 
-hr{
+/* Horizontal Rule */
+hr {
     margin: auto;
     border: 1.5px solid green;
+    margin-bottom: 40px;
 }
 
-.wrapper{
+.section {
+    background-color: #f0f6ff;
+    /* pale tint of maroon */
+    padding: 20px;
+    border-radius: 6px;
+}
+
+/* Section Titles */
+.section-title {
+    border-left: 6px solid #1e3a8a;
+    padding-left: 20px;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #1e3a8a, #3b82f6);
+  border-radius: 2px;
+}
+
+
+/* Grids for content sections */
+
+.section-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: end;
-    grid-auto-rows: 200px;
-    margin-bottom: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 23px;
+    margin-bottom: 40px;
 }
 
-
-.box1{
+/* Cards (reusable content containers) */
+.card {
+    background-color: #e0ecff;
+    border: 1px solid #1e3a8a;
+    border-radius: 8px;
+    padding: 16px 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     align-self: stretch;
-    min-width: 300px;
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-    
-    margin-right: 80px;
+    min-width: 200px;
+}
+.card:hover {
+  transform: translateY(-3px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.2);
 }
 
-.box2{
-    align-self: stretch;
-    min-width: 100px;
-    width: 220px;
-    height:  275px;
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-    font-size: medium;
-}
 
-.bottom_wrapper{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
-}
-
-.box4{
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-    margin-bottom: 2px;
-
-}
-
-.box5{
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-    margin-bottom: 2px;
-}
-
-.box6{
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-
-}
-
-.header{
-    padding: 10px;
-    
-    
-   
-}
-
-.football{
+/* Text alignment utilities */
+.centered-text {
     text-align: center;
-    align-items: center;
-    width: auto;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    margin: 0 20px;
 }
 
-.vertical_line{
-    color: white;
-    margin: 10px;
- 
-}
-.footballHR{
-    margin-top: -35px;
-    border: 1.5px solid white;
-    width: 90px;
-
-
+.justified-text {
+    text-align: justify;
+    margin: 0 20px;
 }
 
-.header-right {
-    grid-template-rows: repeat(2,2fr);
-    float: right;
-    opacity: 1.0;
+/* Header specific styles */
+.header {
+    padding: 20px 10px;
+  background-color: #f0f6ff;
+  border-bottom: 1px solid #dce9ff;
+}
 
-    color: white;
+/* Hero header */
+.hero {
     text-align: center;
-    width: 150px;
-    height: 50px;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
+    background: linear-gradient(to right, #0264d3, #fff);
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px #e0ecff;
+    margin-bottom: 40px;
 
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.63),
+        rgba(255, 255, 255, 0.63)
+    ),
+        url('pictures/IMG_6997.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+    ;
 }
 
-.middle_wrapper{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: end;
-    grid-auto-rows: 200px;
+/* draft-list */
+.draft-list li:nth-child(4n) {
+    margin-bottom: 20px;
+    /* space after every 4 items */
+    border-bottom: 1px solid #ccc;
+    /* optional visual separator */
+    padding-bottom: 10px;
 }
 
-.midBox1{
-    align-self: stretch;
-    min-width: 300px;
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-    margin-right: 80px;
+.tagline {
+  font-style: italic;
+  font-size: 1.1rem;
+    
+
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
 }
 
-.midBox2{
-    align-self: stretch;
-    min-width: 300px;
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-    margin-right: 80px;
-
+.hero h1::after {
+  content: '';
+  display: block;
+  margin: 10px auto;
+  width: 80px;
+  border-bottom: 3px solid #e0ecff;
 }
 
-.midBox3{
-    align-self: stretch;
-    min-width: 300px;
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-    margin-right: 80px;
-
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e3a8a;
+  color: white;
+  margin-top: 40px;
+  border-radius: 6px;
 }
