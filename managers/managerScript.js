@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const overlay = document.getElementById('overlay');
   const popup = document.getElementById('popup');
 
-  // Popup logic
+  // Popup logic (unchanged)
   document.querySelectorAll('.popup-button').forEach(button => {
     button.addEventListener('click', function (e) {
       e.preventDefault();
@@ -36,54 +36,38 @@ document.addEventListener('DOMContentLoaded', function () {
     overlay.style.display = 'none';
   });
 
-
-
-  if (localStorage.getItem('theme') === 'dark') {
-    body.classList.add('dark-mode');
-    toggle.checked = true;
-  }
-
-  toggle.addEventListener('change', () => {
-    if (toggle.checked) {
-      body.classList.add('dark-mode');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      body.classList.remove('dark-mode');
-      localStorage.setItem('theme', 'light');
-    }
-  });
-
-  // Smooth transition
-  body.classList.add('theme-transition');
-  setTimeout(() => body.classList.remove('theme-transition'), 300);
-
   // Load header
   fetch("../header.html")
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById("header-include").innerHTML = data;
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("header-include").innerHTML = data;
 
-    // Now the header is loaded — get the toggle element:
-    const toggle = document.getElementById('theme-toggle');
-    const body = document.body;
+      // Now header is loaded, set up theme toggle & body references
+      const toggle = document.getElementById('theme-toggle');
+      const body = document.body;
 
-    if (toggle) { // safety check
-      if (localStorage.getItem('theme') === 'dark') {
-        body.classList.add('dark-mode');
-        toggle.checked = true;
+      if (toggle) {
+        // Initialize theme based on localStorage
+        if (localStorage.getItem('theme') === 'dark') {
+          body.classList.add('dark-mode');
+          toggle.checked = true;
+        }
+
+        // Listen for toggle changes
+        toggle.addEventListener('change', () => {
+          if (toggle.checked) {
+            body.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark');
+          } else {
+            body.classList.remove('dark-mode');
+            localStorage.setItem('theme', 'light');
+          }
+        });
       }
 
-      toggle.addEventListener('change', () => {
-        if (toggle.checked) {
-          body.classList.add('dark-mode');
-          localStorage.setItem('theme', 'dark');
-        } else {
-          body.classList.remove('dark-mode');
-          localStorage.setItem('theme', 'light');
-        }
-      });
-    }
-  })
-  .catch(err => console.error('Error loading header:', err));
-
+      // Smooth transition effect on theme change
+      body.classList.add('theme-transition');
+      setTimeout(() => body.classList.remove('theme-transition'), 300);
+    })
+    .catch(err => console.error('Error loading header:', err));
 });
