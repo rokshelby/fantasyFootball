@@ -36,9 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
     overlay.style.display = 'none';
   });
 
-  // Dark Mode Toggle
-  const toggle = document.getElementById('theme-toggle');
-  const body = document.body;
+
 
   if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-mode');
@@ -60,17 +58,32 @@ document.addEventListener('DOMContentLoaded', function () {
   setTimeout(() => body.classList.remove('theme-transition'), 300);
 
   // Load header
-fetch("../header.html")
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Failed to load header");
+  fetch("../header.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("header-include").innerHTML = data;
+
+    // Now the header is loaded — get the toggle element:
+    const toggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    if (toggle) { // safety check
+      if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-mode');
+        toggle.checked = true;
       }
-      return response.text();
-    })
-    .then(data => {
-      document.getElementById("header-include").innerHTML = data;
-    })
-    .catch(error => {
-      console.error("Error loading header:", error);
-    });
+
+      toggle.addEventListener('change', () => {
+        if (toggle.checked) {
+          body.classList.add('dark-mode');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          body.classList.remove('dark-mode');
+          localStorage.setItem('theme', 'light');
+        }
+      });
+    }
+  })
+  .catch(err => console.error('Error loading header:', err));
+
 });
