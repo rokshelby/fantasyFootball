@@ -7,7 +7,7 @@ body {
 
 /* Dark mode */
 body.dark-mode {
-  background-color: #121212;
+  background-color: #1e1e1e;
   color: #f0f0f0;
 }
 
@@ -26,6 +26,11 @@ body.dark-mode h6 {
 
 body.dark-mode p,
 body.dark-mode ol.draft-list li {
+  color: #ccc;
+  
+}
+
+body.dark-mode li{
   color: #ccc;
 }
 
@@ -53,6 +58,12 @@ body.dark-mode .nav-menu a:hover {
 body.dark-mode .header{
     color: #f0f0f0;
     background-color: #1e1e1e;
+    border-bottom: 1px solid #1e1e1e;
+}
+
+body.dark-mode .header-managers {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
 }
 
 body.dark-mode .hero{
@@ -61,7 +72,8 @@ body.dark-mode .hero{
     background: linear-gradient(to right, #0264d3, #fff);
     padding: 40px 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px #e0ecff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+
     margin-bottom: 40px;
 
     background-image: linear-gradient(
@@ -71,8 +83,7 @@ body.dark-mode .hero{
         url('pictures/IMG_6997.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat
-    ;
+    background-repeat: no-repeat;
 
 }
 
@@ -92,7 +103,7 @@ body.dark-mode .card{
 
 /* Footer overrides */
 body.dark-mode .site-footer {
-  background-color: #222;
+  background-color: #1e1e1e;
   color: #ccc;
 }
 
@@ -143,4 +154,14 @@ input:checked + .slider::before {
 
 input:checked + .slider {
   background-color: #333;
+}
+
+.card,
+.nav-menu,
+.site-header,
+.site-footer,
+.hero,
+.header,
+.header-managers {
+  transition: background-color 0.3s, color 0.3s;
 }

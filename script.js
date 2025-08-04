@@ -17,3 +17,7 @@
       localStorage.setItem('theme', 'light');
     }
   });
+
+  // Add transition effect
+  body.classList.add('theme-transition');
+  setTimeout(() => body.classList.remove('theme-transition'), 300);

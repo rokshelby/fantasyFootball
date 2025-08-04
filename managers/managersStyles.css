@@ -1,11 +1,9 @@
 .Active_InActive{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    
 }
 
-li{
-    padding: 10px;
-}
 
 .popup-button {
   padding: 5px;
@@ -39,46 +37,41 @@ li{
   display: none;
 }
 
-.football{
-    text-align: center;
-    align-items: center;
-    width: auto;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
+
+body.dark-mode .site-header {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
 }
 
-.vertical_line{
-    color: white;
-    margin: 10px;
- 
-}
-.footballHR{
-    margin-top: -35px;
-    border: 1.5px solid white;
-    width: 90px;
-
-
+body.dark-mode .popup {
+  background-color: #2c2c2c;
+  color: #f0f0f0;
 }
 
-.header-right {
-    grid-template-rows: repeat(2,2fr);
-    float: right;
-    opacity: 1.0;
-    background-color: rgb(98, 50, 50);
-    color: white;
-    text-align: center;
-    width: 150px;
-    height: 50px;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
+body.dark-mode .popup-button {
+   color: #f0f0f0;
+}
 
+body.dark-mode .overlay {
+  color: #f0f0f0;
 }
-hr{
-    margin: auto;
-    border: 1.5px solid green;
+
+body.dark-mode .x{
+    color: #3b82f6;
+    background-color: green;
 }
-.header{
-    padding: 10px;
-    background-color: rgba(0,128, 0, 0.5);
-   
+
+body.dark-mode .Active_InActive {
+  background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+body.dark-mode .active-list,
+body.dark-mode .in-active-list {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.theme-transition * {
+  transition: all 0.3s !important;
 }

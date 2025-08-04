@@ -243,3 +243,6 @@ hr {
   border-bottom: 3px solid #e0ecff;
 }
 
+.theme-transition * {
+  transition: all 0.3s !important;
+}
