@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Load header
-  fetch("../header.html")
+  fetch("/header.html")
     .then(res => res.text())
     .then(data => {
       document.getElementById("header-include").innerHTML = data;
