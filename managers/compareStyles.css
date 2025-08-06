@@ -1,0 +1,32 @@
+#compare-tool select {
+  background-color: #fff;       /* Light background */
+  color: #000;                  /* Dark text */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  appearance: none;             /* For custom styling on some browsers */
+}
+
+#compare-tool option {
+  background-color: #fff;
+  color: #000;
+}
+
+#compare-tool select:hover {
+  border-color: #666;
+}
+
+#compareBtn {
+  background-color: #0077cc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#compareBtn:hover {
+  background-color: #005fa3;
+}
