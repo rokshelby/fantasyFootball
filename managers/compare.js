@@ -11,7 +11,7 @@ async function init() {
     setupThemeToggle();
 
     // Load managers.json
-    const managersRes = await fetch('../data/managers.json');
+    const managersRes = await fetch('../data/matches.json');
     if (!managersRes.ok) throw new Error('Failed to load managers data');
     const matches = await managersRes.json();
 
