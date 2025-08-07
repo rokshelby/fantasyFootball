@@ -111,11 +111,60 @@ function setupCompareButton(managersData) {
     return;
   }
 
-  let html = `<h2>Head-to-Head Matches: ${m1} vs ${m2}</h2><ul>`;
-    matchesBetween.forEach(match => {
-    html += `<li>Week ${match.week || 'N/A'}, Season ${match.season || 'N/A'}: ${match.manager_a_id} (${match.score_a}) vs ${match.manager_b_id} (${match.score_b}) — Winner: ${match.winner_id}</li>`;
-  });
+  let html = `<h2>Head-to-Head Matches:<br> ${m1} vs ${m2}</h2><ul>`;
+  let numM1Wins = 0;
+  let numM2Wins = 0;
+  let numTies = 0;
+  let avgScoreM1 = 0;
+  let avgScoreM2 = 0;
+  matchesBetween.forEach(match => {
+  let scoreM1, scoreM2;
+
+  if (match.manager_a_id === m1) {
+    scoreM1 = match.score_a;
+    scoreM2 = match.score_b;
+  } else {
+    scoreM1 = match.score_b;
+    scoreM2 = match.score_a;
+  }
+
+  if (match.winner_id === m1) {
+    numM1Wins++;
+    avgScoreM1 += scoreM1 || 0;
+  } else if (match.winner_id === m2) {
+    numM2Wins++;
+    avgScoreM2 += scoreM2 || 0;
+  } else {
+    numTies++;
+  }
+
+  html += `<li>Week ${match.week || 'N/A'}, Season ${match.season || 'N/A'}: ${m1} (${scoreM1}) vs ${m2} (${scoreM2}) — Winner: ${match.winner_id}</li>`;
+});
   html += `</ul>`;
+  html += `<p><strong>Summary:</strong> ${m1} Wins: ${numM1Wins}, ${m2} Wins: ${numM2Wins}, Ties: ${numTies}</p>`;
+  if (numM1Wins > 0) {
+    avgScoreM1 = (avgScoreM1 / numM1Wins).toFixed(2);
+    html += `<p>Average Score for ${m1}: ${avgScoreM1}</p>`;
+  } else {
+    html += `<p>No wins for ${m1} to calculate average score.</p>`;
+  }
+  if (numM2Wins > 0) {
+    avgScoreM2 = (avgScoreM2 / numM2Wins).toFixed(2);
+    html += `<p>Average Score for ${m2}: ${avgScoreM2}</p>`;
+  } else {
+    html += `<p>No wins for ${m2} to calculate average score.</p>`;
+  }
+  html += `<p>Last Match: Week ${matchesBetween[matchesBetween.length - 1].week || 'N/A'}, Season ${matchesBetween[matchesBetween.length - 1].season || 'N/A'}</p>`;
+  html += `<p>Matches Count: ${matchesBetween.length}</p>`;
+const lastMatch = matchesBetween[matchesBetween.length - 1];
+
+if (lastMatch.manager_a_id === m1) {
+  html += `<p>Last Match Scores: ${m1} (${lastMatch.score_a}) vs ${m2} (${lastMatch.score_b})</p>`;
+} else {
+  html += `<p>Last Match Scores: ${m1} (${lastMatch.score_b}) vs ${m2} (${lastMatch.score_a})</p>`;
+}
+  html += `<p>Last Match Winner: ${matchesBetween[matchesBetween.length - 1].winner_id || 'N/A'}</p>`;
+  
   resultDiv.innerHTML = html;
   });
 }
