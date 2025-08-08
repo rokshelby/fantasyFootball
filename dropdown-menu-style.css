@@ -76,6 +76,26 @@
 } 
 
 
+body.dark-mode .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1e1e1e;
+  border: 1px solid black;
+  z-index: 1000;
+  list-style: none;
+  margin: 0;
+
+  white-space: nowrap;      /* prevent wrapping */
+  width: max-content;       /* fit longest item */
+  min-width: unset;         /* override any min width */
+  max-width: none;          /* no max width */
+  box-sizing: border-box;
+ 
+}
+
+
 
 li{
     color: black;
@@ -116,3 +136,5 @@ li{
     
   }
 }
+
+
