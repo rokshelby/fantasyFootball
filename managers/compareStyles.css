@@ -169,3 +169,60 @@
 .winner-label.manager1 {
   background-color: #28a745; /* Bootstrap green */
 }
+
+@media (max-width: 600px) {
+  #compare-tool {
+    flex-direction: column !important; /* stack vertically */
+    padding-right: 0;
+    align-items: stretch; /* full width children */
+  }
+
+  #compare-tool .input-container,
+  #compare-tool .input-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  #compare-tool select,
+  #compareBtn {
+    width: 100%;
+    font-size: 18px; /* easier to tap */
+  }
+
+  #compareBtn {
+    padding: 14px;
+  }
+
+  /* Result container adjustments to avoid horizontal scrolling */
+  #result > div {
+    min-width: auto !important;
+  }
+
+  .winner-results > div:last-child {
+    min-width: auto !important;
+    text-align: left; /* Align left on small screens */
+  }
+
+  .winner-results {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .summary-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .theme-switch {
+    top: auto;
+    bottom: 1rem;
+    right: 1rem;
+    padding-top: 0;
+    padding-right: 0;
+  }
+}

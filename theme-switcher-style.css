@@ -123,6 +123,16 @@ body.dark-mode .site-footer {
   
 }
 
+@media (max-width: 600px) {
+  .theme-switch {
+    top: auto;       /* cancel top */
+    bottom: 1rem;    /* move to bottom */
+    right: 1rem;     /* stay right */
+    padding-top: 0;  /* adjust padding */
+    padding-right: 0;
+  }
+}
+
 .theme-switch input {
   display: none;
 }
@@ -165,3 +175,4 @@ input:checked + .slider {
 .header-managers {
   transition: background-color 0.3s, color 0.3s;
 }
+
