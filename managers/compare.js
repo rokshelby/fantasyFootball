@@ -141,21 +141,12 @@ function setupCompareButton(managersData) {
   html += `<li>Week ${match.week || 'N/A'}, Season ${match.season || 'N/A'}: ${m1} (${scoreM1}) vs ${m2} (${scoreM2}) — Winner: ${match.winner_id}</li>`;
 });
   html += `</ul>`;
-  html += `<p><strong>Summary:</strong> ${m1} Wins: ${numM1Wins}, ${m2} Wins: ${numM2Wins}, Ties: ${numTies}</p>`;
-  if (numM1Wins > 0) {
-    avgScoreM1 = (avgScoreM1 / numM1Wins).toFixed(2);
-    html += `<p>Average Score for ${m1}: ${avgScoreM1}</p>`;
-  } else {
-    html += `<p>No wins for ${m1} to calculate average score.</p>`;
-  }
-  if (numM2Wins > 0) {
-    avgScoreM2 = (avgScoreM2 / numM2Wins).toFixed(2);
-    html += `<p>Average Score for ${m2}: ${avgScoreM2}</p>`;
-  } else {
-    html += `<p>No wins for ${m2} to calculate average score.</p>`;
-  }
+  //html += `<p><strong>Summary:<br></strong> ${m1} - Wins:<strong> ${numM1Wins} </strong> <br> ${m2} - Wins: <strong> ${numM2Wins} </strong> <br> Ties: ${numTies}</p>`;
+  html += `<p>Matches Count: ${matchesBetween.length} <br>`;
+  html += `${m1} - Wins:<strong> ${numM1Wins} </strong> <br> `;
+  html += `${m2} - Wins:<strong> ${numM2Wins} </strong> <br> `
+  html += `Ties: ${numTies}</p>`;
   html += `<p>Last Match: Week ${matchesBetween[matchesBetween.length - 1].week || 'N/A'}, Season ${matchesBetween[matchesBetween.length - 1].season || 'N/A'}</p>`;
-  html += `<p>Matches Count: ${matchesBetween.length}</p>`;
 const lastMatch = matchesBetween[matchesBetween.length - 1];
 
 if (lastMatch.manager_a_id === m1) {

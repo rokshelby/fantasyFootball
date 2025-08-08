@@ -75,3 +75,19 @@ body.dark-mode .in-active-list {
 .theme-transition * {
   transition: all 0.3s !important;
 }
+
+.active-list li {
+  color: green;
+}
+
+.inactive-list li {
+  color: gray;
+}
+
+.popup-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 1rem auto; /* center logo with some spacing */
+}
