@@ -141,6 +141,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         <div class="popup-content">
           <button class="close-button">X</button>
           <h2>${manager.name}</h2>
+         <p>Previous Names:</p>
+        <ul>
+        ${manager.previous_team_names.length > 0 
+        ? manager.previous_team_names.map(name => `<li>${name}</li>`).join('') 
+        : '<li>N/A</li>'
+        }
+        </ul>
           <img src="${manager.avatar_url}" alt="Team Logo" class="popup-logo">
           <p><strong>Team:</strong> ${manager.team_name || 'N/A'}</p>
           <p><strong>Joined:</strong> ${manager.joined_season || 'N/A'}</p>
@@ -148,13 +155,19 @@ document.addEventListener('DOMContentLoaded', async () => {
           <p><strong>Bio:</strong> ${manager.bio || ''}</p>
           ${manager.notes ? `<p><strong>Notes:</strong> ${manager.notes}</p>` : ''}
 
-    ${Object.keys(finishes).length > 0 ? `
-      <hr>
-      <h3>Regular Season Finishes</h3>
-      <ul>
-        ${Object.entries(finishes).map(([season, place]) => `<li>${season}: ${place}</li>`).join('')}
-      </ul>
-    ` : ''}
+${Object.keys(finishes).length > 0 ? `
+  <hr>
+  <h3>Regular Season Finishes</h3>
+  <ul>
+    ${
+      Object.entries(finishes)
+        .sort((a, b) => b[0].localeCompare(a[0])) // Sort by season descending
+        .map(([season, place]) => `<li>${season}: ${place}</li>`)
+        .join('')
+    }
+  </ul>
+` : ''}
+
 
           
 

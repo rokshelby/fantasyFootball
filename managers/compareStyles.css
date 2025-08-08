@@ -1,11 +1,14 @@
 #compare-tool select {
-  background-color: #fff;       /* Light background */
-  color: #000;                  /* Dark text */
+  background-color: #fff;
+  /* Light background */
+  color: #000;
+  /* Dark text */
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-  appearance: none;             /* For custom styling on some browsers */
+  appearance: none;
+  /* For custom styling on some browsers */
 }
 
 #compare-tool option {
@@ -16,6 +19,15 @@
 #compare-tool select:hover {
   border-color: #666;
 }
+
+#compare-tool {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;  
+  justify-content: center;
+  padding-right: 10px;
+}
+
 
 #compareBtn {
   background-color: #0077cc;
@@ -29,4 +41,131 @@
 
 #compareBtn:hover {
   background-color: #005fa3;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* Space between elements */
+  margin-top: 20px;
+}
+
+
+#result>div {
+
+  width: 100%;
+  /* or a larger fixed width */
+  box-sizing: border-box;
+  margin-top: 20px;
+
+
+}
+
+.manager1 {
+  color: #fff;
+  background-color: #28a745;
+  /* Bootstrap green */
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.manager2 {
+  color: #fff;
+  background-color: #ff6347;
+  /* Random orange */
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.tie {
+  color: #fff;
+  background-color: #6c757d;
+  /* Neutral gray */
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.winner-results {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+.winner-results > div:last-child{
+  flex-shrink: 0;
+  min-width: 400px;
+  text-align: right;
+}
+
+.match-details {
+  padding-right: 57px;
+  flex: 1 1 auto;
+}
+
+.match-summary{
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #121010ff;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.match-summary-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 0;
+   font-size: 16px; 
+  text-align: center;
+}
+
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.summary-row-divider {
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 6px; /* some spacing after divider */
+}
+
+.win-manager1 {
+  color: #28a745; /* Bootstrap green */
+  font-weight: bold;
+}
+
+.win-manager2 {
+  color: #dc3545; /* Bootstrap red */
+  font-weight: bold;
+}
+
+.last-match-summary {
+  padding: 8px 0;
+  font-size: 14px;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+.winner-label {
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.winner-label.manager1 {
+  background-color: #28a745; /* Bootstrap green */
 }
