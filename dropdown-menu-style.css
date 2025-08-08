@@ -7,7 +7,7 @@
 
 .nav-menu li {
   position: relative;
-  margin-right: 5px;
+
 }
 
 .dropdown-menu li {
@@ -52,41 +52,3 @@ li{
     color: black;
 }
 
-@media (max-width: 600px) {
-  /* Make dropdown full width or near full width */
-  .dropdown-menu {
-    position: static; /* relative to flow so it doesn't overflow */
-    width: 100vw;     /* full viewport width */
-    max-width: 100%;  
-    box-sizing: border-box;
-    border: none;     /* optional: remove border for cleaner mobile UI */
-    box-shadow: none; /* optional: remove shadow if any */
-    padding: 0.5rem 1rem;
-  }
-
-  /* Dropdown items style */
-  .dropdown-menu li {
-    margin: 0;         /* remove extra margin */
-    padding: 0.75rem 0; /* comfortable tap size */
-    border-bottom: 1px solid #ddd; /* subtle separator */
-    color: black;
-  }
-
-  .dropdown-menu li:last-child {
-    border-bottom: none;
-  }
-
-  /* Allow text wrap */
-  .dropdown-menu li,
-  .dropdown-menu a {
-    white-space: normal;
-    word-wrap: break-word;
-  }
-
-  /* Show dropdown on tap/click — you might need JS for this on mobile */
-
-  /* Optionally, make .dropdown-menu visible by default on mobile if you want */
-  .dropdown:hover .dropdown-menu {
-    display: block; /* keep hover for desktop */
-  }
-}
