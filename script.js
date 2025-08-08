@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
     .then(data => {
       document.getElementById("header-include").innerHTML = data;
 
+            // ✅ Fix Home link after header is loaded
+      const homeLink = document.querySelector('a[href="/"]');
+      if (homeLink) {
+        homeLink.setAttribute('href', 'index.html'); // adjust if header is in subfolder
+      }
+
       // Now header is loaded, get toggle and body references
       const toggle = document.getElementById('theme-toggle');
       const body = document.body;
