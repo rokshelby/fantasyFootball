@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
     .then(data => {
       document.getElementById("header-include").innerHTML = data;
 
-            // ✅ Fix Home link after header is loaded
+      // ✅ Fix Home link after header is loaded
       const homeLink = document.querySelector('a[href="/"]');
       if (homeLink) {
         homeLink.setAttribute('href', 'index.html'); // adjust if header is in subfolder
       }
 
-      // Now header is loaded, get toggle and body references
+      // Theme toggle setup
       const toggle = document.getElementById('theme-toggle');
       const body = document.body;
 
@@ -40,7 +40,33 @@ document.addEventListener('DOMContentLoaded', function () {
       } else {
         console.warn('Theme toggle element not found.');
       }
+
+      // --- DROPDOWN MOBILE TOGGLE SETUP ---
+
+      const dropdowns = document.querySelectorAll('.dropdown');
+
+      dropdowns.forEach(dropdown => {
+        const trigger = dropdown.querySelector('a, button');
+        if (!trigger) return;
+
+        trigger.addEventListener('click', e => {
+          if (window.innerWidth <= 600) {
+            e.preventDefault();
+            dropdown.classList.toggle('open');
+          }
+        });
+      });
+
+      document.addEventListener('click', e => {
+        if (window.innerWidth > 600) return;
+
+        dropdowns.forEach(dropdown => {
+          if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove('open');
+          }
+        });
+      });
+
     })
     .catch(err => console.error('Error loading header:', err));
-
 });

@@ -3,41 +3,65 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  
 }
 
 .nav-menu li {
   position: relative;
+  
 
 }
 
 .dropdown-menu li {
-  margin-left: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #ddd;
   color: black;
+  white-space: nowrap;
+}
+
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
 }
 
 .dropdown-menu {
-  white-space: nowrap;
-  width: max-content;
-  min-width: 100%;
-  box-sizing: border-box;
-  
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   background-color: white;
   border: 1px solid black;
+  white-space: nowrap;
   z-index: 1000;
   list-style: none;
- 
   margin: 0;
+  padding: 0.5rem 1rem;
+  min-width: 100%;
+  
+    /* Make dropdown width fit longest item */
+  white-space: nowrap;      /* prevent wrapping */
+  width: max-content;       /* expand to fit content */
+  min-width: unset;         /* override any min-width */
+  max-width: none;          /* no max width */
+  box-sizing: border-box;
+ 
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
+.dropdown-menu a {
+  white-space: nowrap;      /* prevent wrapping inside links */
+  color: black;
+  text-decoration: none;
+  display: block;           /* fill entire li */
+}
+
+.dropdown-menu a:hover {
+  background-color: #eee;
+}
 
 #morelink .arrow.up {
   display: none;
@@ -51,11 +75,7 @@
   display: inline;
 } 
 
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+
 
 li{
     color: black;
@@ -63,17 +83,16 @@ li{
 
 @media (max-width: 600px) {
   .dropdown-menu {
-    display: none;
     position: static;
     width: 100vw;
     max-width: 100%;
-    box-sizing: border-box;
+    
     border: none;
     box-shadow: none;
-    padding: 0.5rem 1rem;
     white-space: nowrap;
-    overflow-x: auto;
+ 
   }
+
 
   .dropdown.open .dropdown-menu {
     display: block;
@@ -93,7 +112,7 @@ li{
 
   .dropdown-menu li,
   .dropdown-menu a {
-    white-space: normal;
-    word-wrap: break-word;
+  width: 100%;
+    
   }
 }
