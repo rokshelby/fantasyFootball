@@ -17,6 +17,11 @@
 }
 
 .dropdown-menu {
+  white-space: nowrap;
+  width: max-content;
+  min-width: 100%;
+  box-sizing: border-box;
+  
   display: none;
   position: absolute;
   top: 100%;
@@ -56,3 +61,39 @@ li{
     color: black;
 }
 
+@media (max-width: 600px) {
+  .dropdown-menu {
+    display: none;
+    position: static;
+    width: 100vw;
+    max-width: 100%;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: none;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+
+  /* Dropdown items style */
+  .dropdown-menu li {
+    margin: 0;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ddd;
+    color: black;
+  }
+
+  .dropdown-menu li:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown-menu li,
+  .dropdown-menu a {
+    white-space: normal;
+    word-wrap: break-word;
+  }
+}
