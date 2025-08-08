@@ -6,6 +6,10 @@
     "avatar_url": "../images/commish.png",
     "active": true,
     "joined_season": 2020,
+    "previous team names": [
+      "Gucci Flip Flops - 2020-2021",
+      "Cant Gage This One - 2022"
+    ],
     "nfl_team": "Chicago Bears",
     "bio": "will ruin perfect seasons.",
     "notes" : "",
@@ -19,6 +23,11 @@
     "avatar_url": "../images/sf49ers.jpg",
     "active": true,
     "joined_season": 2020,
+    "previous team names": [
+      "I'll Name This Later - 2020",
+      "Got W's Mixon my Kupp - 2021",
+      "OnYaHead LikeMURRAYs - 2022-2023"
+    ],
     "nfl_team": "New York Giants",
     "bio": "ahhh once again victory formation.",
     "notes" : "Champion: 2016(ESPN), 2017(ESPN)",
@@ -32,6 +41,9 @@
     "avatar_url": "../images/sccc.png",
     "active": true,
     "joined_season": 2020,
+    "previous team names": [
+      "Saint Clair County Durag Flaps - 2020-2022"
+    ],
     "nfl_team": "Chicago Bears",
     "bio": "manager been holding back the slander for a while.",
     "notes" : "",
@@ -45,6 +57,13 @@
     "avatar_url": "../images/oakland-raiders.svg",
     "active": true,
     "joined_season": 2020,
+    "previous team names": [
+          "Shooter McGavin - 2020",
+          "Gateway Ruggs - 2021",
+          "Watsonder My Towel - 2022",
+          "Eatin' Aint Cheatin' - 2023",
+          "Barry McCockiner - 2024"
+    ],
     "nfl_team": "Las Vegas Raiders",
     "bio": "best manager names in the league!!!",
     "notes" : "",
@@ -58,6 +77,10 @@
     "avatar_url": "../images/tig.png",
     "active": true,
     "joined_season": 2020,
+    "previous team names": [
+      "Super Mario-ta - 2020-2022",
+      "How I Metcalf Your Mother - 2023"
+    ],
     "nfl_team": "New England Patriots",
     "bio": "will have two kickers on the roster at all times.",
     "notes" : "",
@@ -71,6 +94,10 @@
     "avatar_url": "../images/deathrowdeebo.png",
     "active": true,
     "joined_season": 2020,
+    "previous team names": [
+        "GodCalloway - 2020",
+        "Get it outha MUD - 2021-2022"
+    ],
     "nfl_team": "New York Giants",
     "bio": "he's excited about getting first pick next year",
     "notes" : "",
@@ -84,6 +111,8 @@
     "avatar_url": "../images/weget.svg",
     "active": true,
     "joined_season": 2020,
+    "previous team names": [
+    ],
     "nfl_team": "Tennessee Titans",
     "bio": "Somehow alwasy has a good draft, despite being at work.",
     "notes" : "",
@@ -97,6 +126,8 @@
     "avatar_url": "../images/assault.png",
     "active": true,
     "joined_season": 2022,
+    "previous team names": [
+    ],
     "nfl_team": "Baltimore Ravens",
     "bio": "loves to reach for rookies, but it works out.",
     "notes" : "",
@@ -110,6 +141,8 @@
     "avatar_url": "../images/krown.jpg",
     "active": true,
     "joined_season": 2020,
+    "previous team names": [
+    ],
     "nfl_team": "Tampa Bay Buccaneers",
     "bio": "Koming for the krown, but haven't got the chip yet.",
     "notes" : "",
@@ -123,6 +156,8 @@
     "avatar_url": "../images/stafford.png",
     "active": true,
     "joined_season": 2020,
+    "previous team names": [
+    ],
     "nfl_team": "Detroit Lions",
     "bio": "ahhh once again victory formation.",
     "notes" : "",
@@ -136,6 +171,8 @@
     "avatar_url": "../images/sameseason.svg",
     "active": true,
     "joined_season": 2020,
+    "previous team names": [
+    ],
     "nfl_team": "Dallas Cowboys",
     "bio": "Always starts off with a quality draft, but ends up with a bad team.",
     "notes" : "This manager is inactive.",
@@ -149,6 +186,8 @@
     "avatar_url": "../images/quokkas.jpg",
     "active": true,
     "joined_season": 2020,
+    "previous team names": [
+    ],
     "nfl_team": "Dallas Cowboys",
     "bio": "waiver wire crumb grabber, but it works out.",
     "notes" : "Champion: 2019(ESPN)",
@@ -157,11 +196,14 @@
   },
     {
     "id": "m13",
-    "name": "BobzCartel",
-    "team_name": "BobzCartel",
+    "name": "Bobzillas",
+    "team_name": "Bobzillas",
     "avatar_url": "../images/bobzcartel.png",
     "active": false,
     "joined_season": 2020,
+    "previous team names": [
+      "BobzCartel - 2020"
+    ],
     "nfl_team": "Chicago Bears",
     "bio": "won the chip and ran off with the football.",
     "notes" : "",
@@ -175,6 +217,8 @@
     "avatar_url": "../images/nashville.png",
     "active": false,
     "joined_season": 2015,
+    "previous team names": [
+    ],
     "nfl_team": "Los Angeles Rams",
     "bio": "won the chip and ran off into the sunset.",
     "notes" : "Champion: 2015(Espn)",
@@ -189,6 +233,8 @@
     "avatar_url": "../images/showtime.png",
     "active": false,
     "joined_season": 2020,
+    "previous team names": [
+    ],
     "nfl_team": "Los Angeles Lakers lol",
     "bio": "filled in the spot for a friend, solid community service.",
     "notes" : "",
@@ -203,6 +249,8 @@
     "avatar_url": "../images/udai.png",
     "active": false,
     "joined_season": 2018,
+    "previous team names": [
+    ],
     "nfl_team": "St. Louis Rams",
     "bio": "quit the league before the championship matchup even started. lol.",
     "notes" : "Champion: 2018(ESPN)",
