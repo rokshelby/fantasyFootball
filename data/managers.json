@@ -30,7 +30,7 @@
     ],
     "nfl_team": "New York Giants",
     "bio": "ahhh once again victory formation.",
-    "notes" : "Champion: 2016(ESPN), 2017(ESPN)",
+    "notes" : "",
     "twitter": null,
     "instagram": null
   },
@@ -42,7 +42,9 @@
     "active": true,
     "joined_season": 2020,
     "previous_team_names": [
-      "Saint Clair County Durag Flaps - 2020-2022"
+      "Saint Clair County Durag Flaps - 2012-2022",
+      "Shiolin Wu-Tang Clan - 2011"
+      
     ],
     "nfl_team": "Chicago Bears",
     "bio": "manager been holding back the slander for a while.",
@@ -62,7 +64,8 @@
       "Eatin' Aint Cheatin' - 2023",
       "Watsonder My Towel - 2022",
       "Gateway Ruggs - 2021",
-      "Shooter McGavin - 2020"
+      "Shooter McGavin - 2020",
+      "Sandusky's Angels - 2012"
     ],
     "nfl_team": "Las Vegas Raiders",
     "bio": "best manager names in the league!!!",
@@ -96,7 +99,8 @@
     "joined_season": 2020,
     "previous_team_names": [
       "Get it outha MUD - 2021-2022",
-        "GodCalloway - 2020"
+        "GodCalloway - 2020",
+        "Calloway's Killa Kings - 2013"
       ],
     "nfl_team": "New York Giants",
     "bio": "he's excited about getting first pick next year",
@@ -172,10 +176,11 @@
     "active": true,
     "joined_season": 2020,
     "previous_team_names": [
+      "Welp...maybe today?"
     ],
     "nfl_team": "Dallas Cowboys",
     "bio": "Always starts off with a quality draft, but ends up with a bad team.",
-    "notes" : "This manager is inactive.",
+    "notes" : "",
     "twitter": "https://twitter.com/tucked_in_shirt",
     "instagram": "https://instagram.com/tucked_in_shirt"
   },
@@ -190,7 +195,7 @@
     ],
     "nfl_team": "Dallas Cowboys",
     "bio": "waiver wire crumb grabber, but it works out.",
-    "notes" : "Champion: 2019(ESPN)",
+    "notes" : "",
     "twitter": null,
     "instagram": null
   },
@@ -221,7 +226,7 @@
     ],
     "nfl_team": "Los Angeles Rams",
     "bio": "won the chip and ran off into the sunset.",
-    "notes" : "Champion: 2015(Espn)",
+    "notes" : "",
     "twitter": null,
     "instagram": null
   }
@@ -250,13 +255,46 @@
     "active": false,
     "joined_season": 2018,
     "previous_team_names": [
+      "Win Column UDAI"
     ],
     "nfl_team": "St. Louis Rams",
     "bio": "quit the league before the championship matchup even started. lol.",
-    "notes" : "Champion: 2018(ESPN)",
+    "notes" : "",
+    "twitter": null,
+    "instagram": null
+  },
+    {
+    "id": "m16",
+    "name": "Roach",
+    "team_name": "Roach",
+    "avatar_url": "../images/sameseason.svg",
+    "active": false,
+    "joined_season": 2016,
+    "previous_team_names": [
+    ],
+    "nfl_team": "Dallas Cowboys",
+    "bio": "",
+    "notes" : "",
+    "twitter": null,
+    "instagram": null
+  },
+  {
+    "id": "m16",
+    "name": "DreaM BiG",
+    "team_name": "DreaM BiG",
+    "avatar_url": "../images/udai.png",
+    "active": false,
+    "joined_season": 2016,
+    "previous_team_names": [
+    ],
+    "nfl_team": "Peyton Manning Fan Club",
+    "bio": "",
+    "notes" : "",
     "twitter": null,
     "instagram": null
   }
+  
+
 
 
 ]

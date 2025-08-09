@@ -1,4 +1,254 @@
 [
+        {
+    "season": 2011,
+    "week": 13,
+    "manager_a_id": "Saint Clair County Caucasians",
+    "score_a": 100,
+    "manager_b_id": "Team Gipson",
+    "score_b": 99,
+    "winner_id": "Saint Clair County Caucasians",
+    "notes": "",
+    "week_type": "championship"
+  },
+  {
+    "season": 2011,
+    "week": 13,
+    "manager_a_id": "UdaiFade",
+    "score_a": 100,
+    "manager_b_id": "Fake Manager",
+    "score_b": 99,
+    "winner_id": "UdaiFade",
+    "notes": "", 
+    "week_type": "third place"
+  },
+  {
+    "season": 2012,
+    "week": 13,
+    "manager_a_id": "Saint Clair County Caucasians",
+    "score_a": 100,
+    "manager_b_id": "Dicker Downs",
+    "score_b": 99,
+    "winner_id": "Saint Clair County Caucasians",
+    "notes": "",
+    "week_type": "championship"
+  },
+  {
+    "season": 2012,
+    "week": 13,
+    "manager_a_id": "DreaM BiG",
+    "score_a": 100,
+    "manager_b_id": "Fake Manager",
+    "score_b": 99,
+    "winner_id": "DreaM BiG",
+    "notes": "",
+    "week_type": "third place"
+  },
+ {
+    "season": 2013,
+    "week": 13,
+    "manager_a_id": "Death Row Deebo",
+    "score_a": 100,
+    "manager_b_id": "Same Season Diff Team",
+    "score_b": 99,
+    "winner_id": "Death Row Deebo",
+    "notes": "",
+    "week_type": "championship"
+  },
+  {
+    "season": 2013,
+    "week": 13,
+    "manager_a_id": "DreaM BiG",
+    "score_a": 100,
+    "manager_b_id": "Fake Manager",
+    "score_b": 99,
+    "winner_id": "DreaM BiG",
+    "notes": "",
+    "week_type": "third place"
+  },
+    {
+    "season": 2014,
+    "week": 13,
+    "manager_a_id": "Death Row Deebo",
+    "score_a": 100,
+    "manager_b_id": "Same Season Diff Team",
+    "score_b": 99,
+    "winner_id": "Death Row Deebo",
+    "notes": "",
+    "week_type": "championship"
+  },
+    {
+    "season": 2014,
+    "week": 13,
+    "manager_a_id": "Koming for the Krown",
+    "score_a": 100,
+    "manager_b_id": "Fake Manager",
+    "score_b": 99,
+    "winner_id": "Koming for the Krown",
+    "notes": "",
+    "week_type": "third place"
+  },
+      {
+    "season": 2015,
+    "week": 13,
+    "manager_a_id": "Nashvilles Mayor",
+    "score_a": 100,
+    "manager_b_id": "Dicker Downs",
+    "score_b": 99,
+    "winner_id": "Nashvilles Mayor",
+    "notes": "",
+    "week_type": "championship"
+  },
+    {
+    "season": 2015,
+    "week": 13,
+    "manager_a_id": "Death Row Deebo",
+    "score_a": 100,
+    "manager_b_id": "Fake Manager",
+    "score_b": 99,
+    "winner_id": "Death Row Deebo",
+    "notes": "",
+    "week_type": "third place"
+  },
+      {
+    "season": 2016,
+    "week": 13,
+    "manager_a_id": "SF 49ers Played Me",
+    "score_a": 100,
+    "manager_b_id": "Roach",
+    "score_b": 99,
+    "winner_id": "SF 49ers Played Me",
+    "notes": "",
+    "week_type": "championship"
+  },
+    {
+    "season": 2016,
+    "week": 13,
+    "manager_a_id": "Death Row Deebo",
+    "score_a": 100,
+    "manager_b_id": "Fake Manager",
+    "score_b": 99,
+    "winner_id": "Death Row Deebo",
+    "notes": "",
+    "week_type": "third place"
+  },
+      {
+    "season": 2017,
+    "week": 13,
+    "manager_a_id": "SF 49ers Played Me",
+    "score_a": 100,
+    "manager_b_id": "Dicker Downs",
+    "score_b": 99,
+    "winner_id": "SF 49ers Played Me",
+    "notes": "",
+    "week_type": "championship"
+  },
+    {
+    "season": 2017,
+    "week": 13,
+    "manager_a_id": "Death Row Deebo",
+    "score_a": 100,
+    "manager_b_id": "Fake Manager",
+    "score_b": 99,
+    "winner_id": "Death Row Deebo",
+    "notes": "",
+    "week_type": "third place"
+  },
+
+      {
+    "season": 2017,
+    "week": 13,
+    "manager_a_id": "Stew's Super Quokkas",
+    "score_a": 100,
+    "manager_b_id": "Fake Manager",
+    "score_b": 99,
+    "winner_id": "Stew's Super Quokkas",
+    "notes": "",
+    "week_type": "consolation championship"
+  },
+    {
+    "season": 2018,
+    "week": 13,
+    "manager_a_id": "UdaiFade",
+    "score_a": 100,
+    "manager_b_id": "We Get Big Ol TDs",
+    "score_b": 99,
+    "winner_id": "UdaiFade",
+    "notes": "",
+    "week_type": "championship"
+  },
+  {
+    "season": 2018,
+    "week": 13,
+    "manager_a_id": "Stew's Super Quokkas",
+    "score_a": 100,
+    "manager_b_id": "Fake Manager",
+    "score_b": 99,
+    "winner_id": "Stew's Super Quokkas",
+    "notes": "",
+    "week_type": "third place"
+  },
+  {
+    "season": 2018,
+    "week": 13,
+    "manager_a_id": "Saint Clair County Caucasians",
+    "score_a": 100,
+    "manager_b_id": "Fake Manager",
+    "score_b": 99,
+    "winner_id": "Saint Clair County Caucasians",
+    "notes": "",
+    "week_type": "consolation championship"
+  },
+  {
+    "season": 2019,
+    "week": 13,
+    "manager_a_id": "Stew's Super Quokkas",
+    "score_a": 100,
+    "manager_b_id": "We Get Big Ol TDs",
+    "score_b": 99,
+    "winner_id": "Stew's Super Quokkas",
+    "notes": "",
+    "week_type": "championship"
+  },
+  {
+    "season": 2019,
+    "week": 13,
+    "manager_a_id": "Death Row Deebo",
+    "score_a": 100,
+    "manager_b_id": "Fake Manager",
+    "score_b": 99,
+    "winner_id": "Death Row Deebo",
+    "notes": "",
+    "week_type": "third place"
+  },
+    {
+    "season": 2019,
+    "week": 13,
+    "manager_a_id": "Same Season Diff Team",
+    "score_a": 100,
+    "manager_b_id": "Fake Manager",
+    "score_b": 99,
+    "winner_id": "Same Season Diff Team",
+    "notes": "",
+    "week_type": "consolation championship"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
     "season": 2020,
     "week": 1,
@@ -4452,7 +4702,7 @@
     "score_b": 117.84,
     "winner_id": "SF 49ers Played Me",
     "notes": "",
-    "week_type": "consolation champtionship"
+    "week_type": "consolation championship"
   },
   {
     "season": 2023,
