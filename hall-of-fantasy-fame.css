@@ -1,0 +1,28 @@
+.season-section {
+    border: 1px solid blue;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    
+    
+    
+}
+
+.season-section :hover{
+    cursor: pointer;
+
+
+  transform: translateY(-3px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.2);
+
+}
+
+
+    
+
+
+
+
+
+
