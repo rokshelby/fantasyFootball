@@ -13,6 +13,11 @@
   cursor: pointer;
 }
 
+.popup-content{
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
 .popup {
   position: fixed;
   top: 50%;
