@@ -69,4 +69,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     })
     .catch(err => console.error('Error loading header:', err));
+
+    fetch('https://api.github.com/repos/rokshelby/fantasyFootballl/commits/main')
+  .then(response => response.json())
+  .then(data => {
+    const commitDate = new Date(data.commit.committer.date);
+    document.getElementById('date').textContent =
+      "Last updated: " + commitDate.toLocaleDateString(
+        undefined, { year: 'numeric', month: 'long', day: 'numeric' }
+      );
+  })
+  .catch(err => console.error('Error fetching commit date:', err));
 });
