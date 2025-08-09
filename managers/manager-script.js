@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 popup.innerHTML = `<p>Manager not found.</p>`;
                 popup.style.display = 'block';
                 overlay.style.display = 'block';
+                document.body.classList.add('no-scroll');
                 return;
             }       // Fetch matches and calculate results
             const matchesRes = await fetch('../data/matches.json');
@@ -212,6 +213,7 @@ ${Object.keys(finishes).length > 0 ? `
             popup.querySelector('.close-button').addEventListener('click', () => {
                 popup.style.display = 'none';
                 overlay.style.display = 'none';
+                document.body.classList.remove('no-scroll');
             });
         });
     });

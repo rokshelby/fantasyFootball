@@ -23,12 +23,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  max-height: 80vh;
+  overflow-y: auto;
   background: white;
-  padding: 20px 30px;
+  padding: 1rem;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   border-radius: 10px;
-  z-index: 1000;
+  z-index: 9999;
   display: none;
+  
 }
 
 .overlay {
@@ -40,6 +43,11 @@
   background: rgba(0,0,0,0.5);
   z-index: 999;
   display: none;
+}
+
+body.no-scroll{
+  overflow: hidden;
+  height: 100%;
 }
 
 
