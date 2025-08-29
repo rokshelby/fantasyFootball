@@ -143,7 +143,7 @@
     "name": "Koming for the Krown",
     "team_name": "Koming for the Krown",
     "avatar_url": "../images/krown.jpg",
-    "active": true,
+    "active": false,
     "joined_season": 2020,
     "previous_team_names": [
     ],
@@ -204,7 +204,7 @@
     "name": "Bobz Cartel",
     "team_name": "Bobz Cartel",
     "avatar_url": "../images/bobzcartel.png",
-    "active": false,
+    "active": true,
     "joined_season": 2020,
     "previous_team_names": [
       "Bobzillas - 2020"
