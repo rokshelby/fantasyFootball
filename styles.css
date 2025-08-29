@@ -246,3 +246,11 @@ hr {
 .theme-transition * {
   transition: all 0.3s !important;
 }
+
+.date{
+    padding-top: 10px;
+    color: black;
+}
+body.dark-mode .date{
+    color: white;
+}
