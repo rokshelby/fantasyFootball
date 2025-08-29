@@ -201,13 +201,13 @@
   },
     {
     "id": "m13",
-    "name": "Bobzillas",
-    "team_name": "Bobzillas",
+    "name": "Bobz Cartel",
+    "team_name": "Bobz Cartel",
     "avatar_url": "../images/bobzcartel.png",
     "active": false,
     "joined_season": 2020,
     "previous_team_names": [
-      "BobzCartel - 2020"
+      "Bobzillas - 2020"
     ],
     "nfl_team": "Chicago Bears",
     "bio": "won the chip and ran off with the football.",
