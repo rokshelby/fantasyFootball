@@ -1,0 +1,7 @@
+.events-container{
+     display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: auto;
+    align-items: flex-start;
+}

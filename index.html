@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="header-style.css">
     <link rel="stylesheet" href="theme-switcher-style.css">
     <link rel="stylesheet" href="timer.css">
+    <link rel="stylesheet" href="events.css">
 
 </head>
 
@@ -28,81 +29,24 @@
         <h2>Fantasy Playoff Countdown</h2>
         <div id="timer-placeholder"></div>
       </section>
-        <!-- Draft Order Section -->
-        <section class="section">
-
-            <h3 class="section-title">Week Of July 28th, 2025</h3>
 
 
-            <div class="section-grid">
-                <div class="card">
-                    <h5>Draft Order</h5>
-                    <ol class="draft-list">
-                        <li>Same Season Diff Team</li>
-                        <li>Dicker Downs</li>
-                        <li>Commishin' Ain't Easy</li>
-                        <li>Death Row Deebo</li>
-                        <li>Tig Ol' Griddys Me</li>
-                        <li>We Get Big Ol TDs</li>
-                        <li>SF 49ers Played Me</li>
-                        <li>Bobz Cartel</li>
-                        <li>Saint Clair County Caucasians</li>
-                        <li>Stafford Infection</li>
-                        <li>Stew's Super Quokkas</li>
-                        <li>Alabama Assault</li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-
-        <!-- League News Section -->
-        <section class="section">
-            <h3 class="section-title">League News</h3>
-
-            <div class="section-grid">
-                <div class="card">
-                    <h6>League Information</h6>
-                    <p class="centered-text">
-                        Week of July 6th, 2025 News
-                    </p>
-                    <p>
-                        "Welcome to the 2025-2026 Player Haters Fantasy Football League! As we gear up for another exciting season, here are some important updates and reminders:"<br>
-                        <ul>
-                            <li>dont mess up your draft</li>
-                            <li>stay active on the waivers</li>
-                            <li>make reasonable trades</li>
-                            <li>have fun</li>
-                        </ul>
-                                                
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h6>League Information</h6>
-                    <p class="centered-text">
-                        Week of July 13th, 2025 News
-                    </p>
-                    <p>
-                        "Draft Day is fast approaching! Mark your calendars for September 2nd at 7:30 PM. Make sure to review your strategies and be ready to make those crucial picks."
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h6>League Information</h6>
-                    <p class="centered-text">
-                        Week of July 20th, 2025 News
-                    </p>
-                    <p>
-                        "Trade Deadline Reminder: The trade deadline for this season is set for November 21st. Make sure to finalize any trades before this date to ensure they count towards your team's success."<br>
-                        *But y'all dont be trading anyways lol.*
-                    </p>
-                </div>
-
-            </div>
-        </section>
+<section class="section">
+  <h3 class="section-title">Draft Highlights</h3>
+  <div id="draft-highlights" class="section-grid">
+    <!-- Manager draft highlights will load here -->
+  </div>
+</section>
 
 
-        <!-- League Notes Section -->
+      
+        <h3 class="section-title">League News</h3>
+        <div id="events-container" class="events-container"></div>
+
+        
+
+
+        <!-- League Notes Section
         <section class="section">
 
             <h3 class="section-title">League Notes</h3>
@@ -134,8 +78,7 @@
                 </div>
             </div>
         </section>
-
-
+        -->
         <footer class="site-footer">
 
         <div class="footer-container">
@@ -165,6 +108,8 @@
        
         <script src="script.js"></script>
         <script src="timer.js"></script>
+        <script src="events.js"></script>
+        <script src="drafthighlight.js"></script>
     </div>
 </body>
 

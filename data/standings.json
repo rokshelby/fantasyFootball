@@ -1,0 +1,56 @@
+
+
+
+{
+  "weeks": ["Pre-Draft", "Draft", "W1", "W2", "W3", "W4", "W5","W6", "W7"],
+  "managers": [
+    {
+      "name": "Same Season Diff Team",
+      "scores": [1,2]
+    },
+    {
+      "name": "Dicker Downs",
+      "scores": [2,4]
+    },
+    {
+      "name": "Commishin aint easy",
+      "scores": [3,12]
+    },
+    {
+      "name": "R Odunze Day",
+      "scores": [4,10]
+    },
+    {
+      "name": "Tig Ol Griddys",
+      "scores": [5,11]
+    },
+    {
+      "name": "We Get Big Ol TDs",
+      "scores": [6,1]
+    },
+    {
+      "name": "SF 49ers Played Me",
+      "scores": [7,5]
+    },
+    {
+      "name": "Bobz Cartel",
+      "scores": [8,8]
+    },
+    {
+      "name": "Caleb and The Revolution",
+      "scores": [9,3]
+    },
+    {
+      "name": "Stafford Infection",
+      "scores": [10,6]
+    },
+    {
+      "name": "Stew's Super Quokkas",
+      "scores": [11,7]
+    },
+    {
+      "name": "Alabama Assault",
+      "scores": [12,9]
+    }
+  ]
+}

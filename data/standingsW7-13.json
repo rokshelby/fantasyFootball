@@ -1,0 +1,53 @@
+{
+  "weeks": ["W7", "W8", "W9", "W10", "W11", "W12","W13", "W14"],
+  "managers": [
+    {
+      "name": "Same Season Diff Team",
+      "scores": [11]
+    },
+    {
+      "name": "Dicker Downs",
+      "scores": [1]
+    },
+    {
+      "name": "Commishin aint easy",
+      "scores": [2]
+    },
+    {
+      "name": "R Odunze Day",
+      "scores": [3]
+    },
+    {
+      "name": "Tig Ol Griddys",
+      "scores": [4]
+    },
+    {
+      "name": "We Get Big Ol TDs",
+      "scores": [5]
+    },
+    {
+      "name": "SF 49ers Played Me",
+      "scores": [6]
+    },
+    {
+      "name": "Bobz Cartel",
+      "scores": [7]
+    },
+    {
+      "name": "Caleb and The Revolution",
+      "scores": [8]
+    },
+    {
+      "name": "Stafford Infection",
+      "scores": [9]
+    },
+    {
+      "name": "Stew's Super Quokkas",
+      "scores": [10]
+    },
+    {
+      "name": "Alabama Assault",
+      "scores": [12]
+    }
+  ]
+}
