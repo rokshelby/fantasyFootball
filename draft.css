@@ -29,9 +29,6 @@
     font-weight: bold;
   }
 
-  
-  
-
 
 
 
@@ -64,4 +61,28 @@
   height: 200px;
   
   border-radius: 8px;
+}
+
+
+/* Mobile (phones) */
+@media (max-width: 750px) {
+  #draft-analysis-container {
+    grid-template-columns: 1fr; /* one card per row on small screens */
+  }
+
+  .managerBlock {
+    flex-direction: column; /* stack text above image */
+    align-items: center;    /* center the image */
+    text-align: center;     /* center the text if you like */
+  }
+
+  .managerBlock p {
+    width: 100%; /* let text take full width */
+  }
+
+  .managerBlock img {
+    width: 100%;     /* image fills container width */
+    height: auto;    /* keep aspect ratio */
+    max-width: 300px; /* prevent it from getting too huge */
+  }
 }
