@@ -41,7 +41,7 @@
 .manager-analysis {
    padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(222,444,3,0.1);
+  box-shadow: 0 2px 6px rgb(30, 58, 138);
 }
 .managerBlock {
   display: flex;
@@ -66,6 +66,9 @@
 
 /* Mobile (phones) */
 @media (max-width: 750px) {
+  .draft-board{
+    grid-template-columns: 1fr;
+  }
   #draft-analysis-container {
     grid-template-columns: 1fr; /* one card per row on small screens */
   }
