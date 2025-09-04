@@ -1,0 +1,9 @@
+.chart-container {
+  width: 100%;
+  overflow-x: auto;   /* enables horizontal scroll */
+}
+
+#managersLineChart {
+  min-width: 900px;   /* forces chart to be readable */
+  height: 500px;
+}

@@ -36,7 +36,8 @@ fetch('data/standings.json')
         datasets: datasets
       },
       options: {
-        responsive: true,
+        responsive: false,
+        maintainAspectRatio: false,
         plugins: {
           legend: { position: 'bottom' },
           title: { display: true, text: 'League Standing' }
