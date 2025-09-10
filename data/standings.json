@@ -6,51 +6,51 @@
   "managers": [
     {
       "name": "Same Season Diff Team",
-      "scores": [1,3]
+      "scores": [1,3,7]
     },
     {
       "name": "Dicker Downs",
-      "scores": [2,6]
+      "scores": [2,6,8]
     },
     {
       "name": "Commishin aint easy",
-      "scores": [3,12]
+      "scores": [3,12,5]
     },
     {
       "name": "R Odunze Day",
-      "scores": [4,4]
+      "scores": [4,4,9]
     },
     {
       "name": "Tig Ol Griddys",
-      "scores": [5,10]
+      "scores": [5,10,12]
     },
     {
       "name": "We Get Big Ol TDs",
-      "scores": [6,11]
+      "scores": [6,11,10]
     },
     {
       "name": "SF 49ers Played Me",
-      "scores": [7,5]
+      "scores": [7,5,4]
     },
     {
       "name": "Bobz Cartel",
-      "scores": [8,7]
+      "scores": [8,7,6]
     },
     {
       "name": "Caleb and The Revolution",
-      "scores": [9,1]
+      "scores": [9,1,1]
     },
     {
       "name": "Stafford Infection",
-      "scores": [10,8]
+      "scores": [10,8,2]
     },
     {
       "name": "Stew's Super Quokkas",
-      "scores": [11,9]
+      "scores": [11,9,11]
     },
     {
       "name": "Alabama Assault",
-      "scores": [12,2]
+      "scores": [12,2,3]
     }
   ]
 }

@@ -59,3 +59,54 @@ fetch('data/standings.json')
     });
   })
   .catch(err => console.error('Error loading scores:', err));
+
+
+  document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const [matchesRes, managersRes] = await Promise.all([
+      fetch("data/matches.json"),
+      fetch("data/managers.json")
+    ]);
+
+    if (!matchesRes.ok || !managersRes.ok) throw new Error("Failed to load data");
+
+const allMatches = await matchesRes.json();
+
+// Get all weeks for season 2025
+let getWeeks = new Set(allMatches.filter(g => g.season === 2025).map(g => g.week));
+getWeeks = Array.from(getWeeks).sort((a, b) => a - b);
+
+const section = document.getElementById("weeklyHighScores");
+
+for (let w of getWeeks) {
+  // Filter just this week's games
+  const weekGames = allMatches.filter(g => g.season === 2025 && g.week === w);
+
+  let highScore = -Infinity;
+  let highManager = null;
+
+  for (const g of weekGames) {
+    if (g.score_a > highScore) {
+      highScore = g.score_a;
+      highManager = g.manager_a_id;
+    }
+    if (g.score_b > highScore) {
+      highScore = g.score_b;
+      highManager = g.manager_b_id;
+    }
+  }
+
+  if (section) {
+    section.innerHTML += `
+      <div class="week-header"></div>
+      <ul>
+        <li>Week ${w} - High Score: ${highManager} (${highScore} pts)</li>
+      </ul>
+    `;
+  }
+}
+
+  } catch (error) {
+    console.error("Error loading data:", error);
+  }
+});
