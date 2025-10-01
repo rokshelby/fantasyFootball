@@ -22,7 +22,7 @@ fetch('data/events.json')
       card.className = 'card';
       card.innerHTML = `
         <h6>${event.title}</h6>
-        <a href="eventsList.html#event-${event.date}"> <p class="centered-text">${event.date}</p></a>
+        <a href="eventslist.html#event-${event.date}"> <p class="centered-text">${event.date}</p></a>
         <p>${event.description}</p>
       `;
       eventsContainer.appendChild(card);

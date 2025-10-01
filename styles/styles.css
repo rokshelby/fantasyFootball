@@ -171,6 +171,52 @@ hr {
     align-self: stretch;
     min-width: 200px;
 }
+.card-report {
+    background-color: (0, 0, 0, 0.2);
+    border: 1px solid #1e3a8a;
+    border-radius: 8px;
+    padding: 16px 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    align-self: stretch;
+    min-width: 200px;
+}
+
+.card-report:hover {
+  transform: translateY(-3px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.2);
+}
+.card-report img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* keeps aspect ratio while filling */
+    border-radius: 8px; /* optional, rounded corners */
+
+}
+
+
+.card-report h3{
+    color:black;
+    text-align: left;
+    
+}
+
+.card-report h5{
+    text-align: left;
+}
+
+.manager-row {
+  display: flex;
+  align-items: center; /* vertically centers text with image */
+  gap: 15px; /* space between image and text */
+}
+
+
+.manager-row .trash {
+  flex: 1; /* lets text take remaining space */
+}
+
+
 .card:hover {
   transform: translateY(-3px);
   transition: transform 0.2s ease, box-shadow 0.2s ease;

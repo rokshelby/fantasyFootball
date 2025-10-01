@@ -80,7 +80,7 @@ body.dark-mode .hero{
         rgba(0, 0, 0, 0.63),
         rgba(0, 0, 0, 0.63)
     ),
-        url('pictures/IMG_6997.jpg');
+        url('../pictures/IMG_6997.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

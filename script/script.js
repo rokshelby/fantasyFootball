@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const dateElement = document.getElementById('date');
       if (dateElement) {
-        fetch('https://api.github.com/repos/rokshelby/fantasyFootballl/commits/main')
+        fetch('https://api.github.com/repos/rokshelby/fantasyFootball/commits/main')
           .then(response => response.json())
           .then(data => {
             const commitDate = new Date(data.commit.committer.date);

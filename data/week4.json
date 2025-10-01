@@ -1,0 +1,88 @@
+{
+    "managers": [
+    {
+        "name": "Same Season Diff Team",
+        "record":"2-2",
+        "draftGrade":"A-",
+        "trashTracker": "Doing pretty good, had a bad matcup week 2. You'd be taking names if not for Burrow. lol",
+        "image":"https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUybWJkZ29tYWg1bGpoeDZkNmR1NTFoajk1YnNnbjVjcHQwb2dpdmhvOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/HP7mtfNa1E4CEqNbNL/source.gif"
+    },
+    {
+        "name": "Dicker Downs",
+        "record": "0-4",
+        "draftGrade":"B",
+        "trashTracker": "You were right about Stroud lol, but it still doesn't matter because you 0-4. Had some bad luck but you gotta start winning some games. Definitely going to be a long season for you.",
+        "image":"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGR1bzB1MGp2N3NmcmprOG52NGgybmQxYTB0bWk4ejBuYXFlOHg0ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5pMGZHSqfvGT5mnTwx/giphy.gif"
+    },
+    {
+        "name": "Commishin aint easy",
+        "record": "2-2",
+        "draftGrade":"C-",
+        "trashTracker": "Hanging in there, basically surviving off James Cook. Got cheated in week 3. Its always family that catches you slipping.",
+        "image":"https://media.tenor.com/jfzYtSfq-_AAAAAM/deoncole-welp.gif"
+    },
+    {
+      "name": "Odunze Day",
+      "record": "2-2",
+        "draftGrade":"B+",
+          "trashTracker": "Still got weaknesses on your roster. Look at you holding defenses — You look like you got a waiver wire roster.",
+          "image":"https://media.tenor.com/xYUAVJ05lrgAAAAM/soft-kobe.gif"
+    },
+    {
+      "name": "Tig Ol Griddys",
+      "record": "2-2",
+        "draftGrade":"C+",
+          "trashTracker": "Your team is cheeks like the draft grade I got you. You had one week that was the high score, but two out of four weeks under 100 points. It is defintely trash you got the highscore on me but it is what it is.",
+          "image":"https://media1.tenor.com/m/wIxFiobxxbIAAAAd/john-jonah-jameson-lol.gif"
+    },
+    {
+      "name": "We Get Big Ol TDs",
+      "record": "2-2",
+        "draftGrade":"C",
+          "trashTracker": "Besides QJ, every player on your roster is in a struggling offense, or isn't a core piece of the offense. Struggle Bus.",
+          "image":"https://media1.tenor.com/m/qeUbJ8Yu9KYAAAAC/aww-shaggy.gif"
+    },
+    {
+      "name": "SF 49ers Played Me",
+      "record": "3-1",
+        "draftGrade":"B+",
+          "trashTracker": "Oh, you got a piece of humble pie in week 4. Just what the doctor prescribed. I can't really talk mess because your lineup is showing up.",
+          "image":"https://y.yarn.co/e2e5934a-09e0-40bd-9d93-c3e17716669c_text.gif"
+    },
+    {
+      "name": "Bobz Cartel",
+      "record": "3-1",
+        "draftGrade":"B",
+          "trashTracker": "Came back into the league with a solid start. Lol, you traded away a rookie asset before the breakout. Jeanty put up 33 to Keenan's 8. Stew fleeced ya and now you are weak at RB.",
+          "image":"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExajZld3IxMWFqdmpibjc5bnVmeTk2ZWpqODZraHFpOXo5bmNxMmk2NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zcqg0G42ZB8TeFfnPW/giphy.gif"
+    },
+    {
+      "name": "Caleb and The Revolution",
+      "record": "2-2",
+        "draftGrade":"A",
+          "trashTracker": "Injury Bug, no shade towards your team...Lol I'm kidding, things are looking mid.",
+          "image":"https://gifsec.com/wp-content/uploads/2022/10/nervous-gif-1.gif"
+    },
+    {
+      "name": "Stafford Infection",
+      "record": "2-2",
+        "draftGrade":"C+",
+          "trashTracker": "Your team putting up points as I expected based on your draft grade, but way too much variance.",
+          "image":"https://media1.tenor.com/m/CLspviSlTx0AAAAC/matt-stafford.gif"
+    },
+    {
+      "name": "Stew's Super Quokkas",
+      "record": "2-2",
+        "draftGrade":"B-",
+          "trashTracker": "Solid trade - straight taking cats' players for chump change. I wanted to veto the trade, but I won last year, I simply don't care. I like the chaos.",
+          "image":"https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWY5b2VzMDZ1cHAxd2JuM3ZocHFvNnpvejhwYzhmM2M5Nm5tdWs1diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uovRt2kyG3ASk/giphy.gif"
+    },
+    {
+      "name": "Alabama Assault",
+      "record": "2-2",
+        "draftGrade":"A",
+          "trashTracker": "Team is starting to turn the corner and I don't like it. I hope you struggle to make the right qb decision every week. I know you are more worried about your real life team.",
+          "image":"https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUybjh2MGZiNXN6aGR1anVxc240b2h6bmtsNTZydjIzMjNsNDhiYWdqZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Yy3SMRUWBQn81GdrIV/200.gif"
+    }
+  ]
+}
