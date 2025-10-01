@@ -172,7 +172,7 @@ hr {
     min-width: 200px;
 }
 .card-report {
-    background-color: (0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid #1e3a8a;
     border-radius: 8px;
     padding: 16px 20px;
