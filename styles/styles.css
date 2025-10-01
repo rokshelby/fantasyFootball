@@ -300,3 +300,12 @@ hr {
 body.dark-mode .date{
     color: white;
 }
+
+@media (max-width: 600px) {
+.manager-row {
+  display:block;
+  align-items: center; /* vertically centers text with image */
+  gap: 15px; /* space between image and text */
+}
+
+}
