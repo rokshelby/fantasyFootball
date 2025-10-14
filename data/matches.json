@@ -6208,6 +6208,66 @@
     "winner_id": "Tig Ol Griddys",
     "notes": "",
     "week_type": "regular_season"
+  },{
+    "season": 2025,
+    "week": 6,
+    "manager_a_id": "Commishin aint easy",
+    "score_a": 68.56,
+    "manager_b_id": "Caleb and The Revolution",
+    "score_b": 112.48,
+    "winner_id": "Caleb and The Revolution",
+    "notes": "",
+    "week_type": "regular_season"
+  },{
+    "season": 2025,
+    "week": 6,
+    "manager_a_id": "Bobz Cartel",
+    "score_a": 79.98,
+    "manager_b_id": "Dicker Downs",
+    "score_b": 153.28,
+    "winner_id": "Dicker Downs",
+    "notes": "",
+    "week_type": "regular_season"
+  },{
+    "season": 2025,
+    "week": 6,
+    "manager_a_id": "Stafford Infection",
+    "score_a": 74.14,
+    "manager_b_id": "Stew's Super Quokkas",
+    "score_b": 158.74,
+    "winner_id": "Stew's Super Quokkas",
+    "notes": "",
+    "week_type": "regular_season"
+  },{
+    "season": 2025,
+    "week": 6,
+    "manager_a_id": "SF 49ers Played Me",
+    "score_a": 144.96,
+    "manager_b_id": "Odunze Day",
+    "score_b": 71.82,
+    "winner_id": "SF 49ers Played Me",
+    "notes": "",
+    "week_type": "regular_season"
+  },{
+    "season": 2025,
+    "week": 6,
+    "manager_a_id": "Alabama Assault",
+    "score_a": 96.80,
+    "manager_b_id": "We Get Big Ol TDs",
+    "score_b": 85.88,
+    "winner_id": "Alabama Assault",
+    "notes": "",
+    "week_type": "regular_season"
+  },{
+    "season": 2025,
+    "week": 6,
+    "manager_a_id": "Same Season Diff Team",
+    "score_a": 155.06,
+    "manager_b_id": "Tig Ol Griddys",
+    "score_b": 116.92,
+    "winner_id": "Same Season Diff Team",
+    "notes": "",
+    "week_type": "regular_season"
   }
 
 
