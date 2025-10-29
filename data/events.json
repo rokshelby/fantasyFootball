@@ -1,6 +1,11 @@
 {
   "events": [
     {
+      "title": "Mid Season Report",
+      "date": "2025-10-01",
+      "description": "We're halfway through the season! Take a moment to review your team's performance so far and make any necessary adjustments for the second half of the season."
+    },
+    {
       "title": "Draft Highlights",
       "date": "2025-09-03",
       "description":"Click here for draft highlights"},

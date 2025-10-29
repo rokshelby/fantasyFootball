@@ -7,3 +7,8 @@
   min-width: 900px;   /* forces chart to be readable */
   height: 500px;
 }
+
+#managersLineChart2 {
+  min-width: 900px;   /* forces chart to be readable */
+  height: 500px;
+}

@@ -18,13 +18,13 @@ async function loadMatches(){
 async function loadWeek4(){
 
     const allMatches = await loadMatches();
-    fetch('data/week4.json')
+    fetch('data/week8.json')
     .then(response => response.json())
     .then(data => {
         data.managers.forEach(manager => {
             const card = document.createElement('div');
             card.className = 'card-report';
-            const matchesInSeason = allMatches.filter(m => m.season === 2025 && m.week <= 4)
+            const matchesInSeason = allMatches.filter(m => m.season === 2025)
 
             const managerMatches = matchesInSeason.filter(match => 
                 match.manager_a_id === manager.name || match.manager_b_id === manager.name
