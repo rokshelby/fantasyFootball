@@ -121,7 +121,7 @@ const allMatches = await matchesRes.json();
 
 // Get all weeks for season 2025
 let getWeeks = new Set(allMatches.filter(g => g.season === 2025).map(g => g.week));
-getWeeks = Array.from(getWeeks).sort((a, b) => a - b);
+getWeeks = Array.from(getWeeks).sort((a, b) => b - a);
 
 const section = document.getElementById("weeklyHighScores");
 
