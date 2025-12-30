@@ -1,0 +1,112 @@
+{
+    "managers": [
+    {
+        "name": "Same Season Diff Team",
+        "record":"10-4",
+        "draftGrade":"A-",
+        "regular_season_finish": "2nd Place",
+        "season_finish": "4th Place",
+        "trashTracker": "Another let down in the playoffs. Your team was built for the long haul, but came up short when it mattered most. Maybe next year. It's unfortunate, but lets not act like we didnt expect this outcome. lol.",
+        "image":"https://media1.tenor.com/m/uBBA5GTeGT0AAAAC/state-farm-gotta-be-quicker-than-that.gif"
+    },
+    {
+        "name": "Dicker Downs",
+        "record": "3-11",
+        "draftGrade":"B",
+        "regular_season_finish": "12th Place",
+        "season_finish": "11th Place",
+        "trashTracker": "Straight trash season. You had some good players, but just couldnt get it done. Maybe next year you can turn it around. Drafting travis hunter was basically a description of your season.",
+        "image":"https://media1.tenor.com/m/YsmTxMXMxYsAAAAd/raiders-las-vegas-raiders.gif"
+    },
+    {
+        "name": "Commishin aint easy",
+        "record": "6-8",
+        "draftGrade":"C-",
+        "regular_season_finish": "8th Place",
+        "season_finish": "8th Place",
+        "trashTracker": "It sucks that I have to give up the belt so quickly. I was hoping it was going to collect more dust on my shelf. ",
+        "image":"https://media1.tenor.com/m/sr-iayblepUAAAAd/caleb-williams-caleb-williams-throw.gif"
+    },
+    {
+      "name": "Odunze Day",
+      "record": "8-6",
+        "draftGrade":"B+",
+        "regular_season_finish": "4th Place",
+        "season_finish": "1st Place",
+          "trashTracker": "Your team just hung around and got lucky. Talking about this win was like a win of old. you haven't won since last decade, relax. Stay humble. Enjoy this while it last.",
+          "image":"https://media1.tenor.com/m/4X2GRaEx7ScAAAAd/nobody-cares-nobody.gif"
+    },
+    {
+      "name": "Tig Ol Griddys",
+      "record": "3-5",
+        "draftGrade":"C+",
+        "regular_season_finish": "9th Place",
+        "season_finish": "10th Place",
+          "trashTracker": "I feel like you are only in this league to troll me. I'm disgusted about the simple fact that my team can't seem to beat yours. ",
+          "image":"https://media1.tenor.com/m/7Rrl5OVwnJkAAAAd/cam-newton.gif"
+    },
+    {
+      "name": "We Get Big Ol TDs",
+      "record": "5-9",
+        "draftGrade":"C",
+        "regular_season_finish": "11th Place",
+        "season_finish": "9th Place",
+          "trashTracker": "You like swep just haven't been good since y'all won. Not even respectable anymore. Just bad. At least you got first pick next year.",
+          "image":"https://media1.tenor.com/m/RkLCslioAgQAAAAC/participation-participation-trophy.gif"
+    },
+    {
+      "name": "SF 49ers Played Me",
+      "record": "10-4",
+        "draftGrade":"B+",
+        "regular_season_finish": "1st Place",
+        "season_finish": "3rd Place",
+          "trashTracker": "Looking like a B+ draft grade to me. lol Your team was solid all year and you deserved to make it this far. Too bad you couldn't get past Odunze Day. ",
+          "image":"https://media1.tenor.com/m/2jgjpqI7JjsAAAAC/pumpkin-pie-pies.gif"
+    },
+    {
+      "name": "Bobz Cartel",
+      "record": "7-7",
+        "draftGrade":"B",
+        "regular_season_finish": "7th Place",
+        "season_finish": "7th Place",
+          "trashTracker": "Mediocre season for a mediocre team. Nothing special, nothing terrible. Just meh. Thanks for coming back. ",
+          "image":"https://media1.tenor.com/m/8WTQpvCdIg4AAAAd/revenge-nvp.gif"
+    },
+    {
+      "name": "Caleb and The Revolution",
+      "record": "10-4",
+        "draftGrade":"A",
+        "regular_season_finish": "3rd Place",
+        "season_finish": "2nd Place",
+          "trashTracker": "Great season overall. Sidenote you haven't won it all since the beginning of time. Just saying. ",
+          "image":"https://media1.tenor.com/m/VPqECJ1XqLgAAAAC/old-man-punch-fall.gif"
+    },
+    {
+      "name": "Stafford Infection",
+      "record": "7-7",
+        "draftGrade":"C+",
+        "regular_season_finish": "6th Place",
+        "season_finish": "5th Place",
+          "trashTracker": "You a shoulda woulda coulda but nah, you had to go and choke it away. Typical Stafford Infection behavior.",
+          "image":"https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2tvMml1ZXRlbHp0NzVtY2VqbTEwNnh1MTB1bTd0bnl4dTNrZGRwayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tKswt3yqgJHJm/giphy.gif"
+    },
+    {
+      "name": "Stew's Super Quokkas",
+      "record": "7-7",
+        "draftGrade":"B-",
+        "regular_season_finish": "5th Place",
+        "season_finish": "6th Place",
+          "trashTracker": "You'll go as far as the cowboys go. So not very far. - Clearly I was right about this.",
+          "image":"https://pbs.twimg.com/media/G8p7DLMW8AACTmo.jpg"
+    },
+    {
+      "name": "Alabama Assault",
+      "record": "7-7",
+        "draftGrade":"A",
+        "regular_season_finish": "10th Place",
+        "season_finish": "12th Place",
+          "trashTracker": "You let me down this season, I expected a trade or something, you just wanted to hate lol.",
+          "image":"https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTZ3MWVwdDY4ZmhjbnZsbHZzdTE3NGNyc3J1d3NwMDhrOGI5c2N4YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3h5CVcX7YhAjj6ODwf/giphy.gif"
+    }
+  ]
+}
