@@ -6764,4 +6764,210 @@
     "notes": "",
     "week_type": "regular_season"
   }
+
+    ,{
+    "season": 2025,
+    "week": 15,
+    "manager_a_id": "Commishin aint easy",
+    "score_a": 117.94,
+    "manager_b_id": "SF 49ers Played Me",
+    "score_b": 144.30,
+    "winner_id": "SF 49ers Played Me",
+    "notes": "",
+    "week_type": "quarter final"
+  },{
+    "season": 2025,
+    "week": 15,
+    "manager_a_id": "Odunze Day",
+    "score_a": 147.10,
+    "manager_b_id": "Stew's Super Quokkas",
+    "score_b": 91.16,
+    "winner_id": "Odunze Day",
+    "notes": "",
+    "week_type": "quarter final"
+  },{
+    "season": 2025,
+    "week": 15,
+    "manager_a_id": "Caleb and The Revolution",
+    "score_a": 120.96,
+    "manager_b_id": "Stafford Infection",
+    "score_b": 102.92,
+    "winner_id": "Caleb and The Revolution",
+    "notes": "",
+    "week_type": "quarter final"
+  },{
+    "season": 2025,
+    "week": 15,
+    "manager_a_id": "Same Season Diff Team",
+    "score_a": 120.58,
+    "manager_b_id": "Bobz Cartel",
+    "score_b": 119.00,
+    "winner_id": "Same Season Diff Team",
+    "notes": "",
+    "week_type": "quarter final"
+  },{
+    "season": 2025,
+    "week": 15,
+    "manager_a_id": "We Get Big Ol TDs",
+    "score_a": 0,
+    "manager_b_id": "bye",
+    "score_b": 0,
+    "winner_id": "We Get Big Ol TDs",
+    "notes": "",
+    "week_type": "missed playoffs"
+  },{
+    "season": 2025,
+    "week": 15,
+    "manager_a_id": "Dicker Downs",
+    "score_a": 0,
+    "manager_b_id": "bye",
+    "score_b": 0,
+    "winner_id": "Dicker Downs",
+    "notes": "",
+    "week_type": "missed playoffs"
+  },{
+    "season": 2025,
+    "week": 15,
+    "manager_a_id": "Alabama Assault",
+    "score_a": 0,
+    "manager_b_id": "bye",
+    "score_b": 0,
+    "winner_id": "Alabama Assault",
+    "notes": "",
+    "week_type": "missed playoffs"
+  },{
+    "season": 2025,
+    "week": 15,
+    "manager_a_id": "Tig Ol Griddys",
+    "score_a": 0,
+    "manager_b_id": "bye",
+    "score_b": 0,
+    "winner_id": "Tig Ol Griddys",
+    "notes": "",
+    "week_type": "missed playoffs"
+  }
+
+    ,{
+    "season": 2025,
+    "week": 16,
+    "manager_a_id": "Commishin aint easy",
+    "score_a": 65.92,
+    "manager_b_id": "Stew's Super Quokkas",
+    "score_b": 129.06,
+    "winner_id": "Stew's Super Quokkas",
+    "notes": "",
+    "week_type": "consolation"
+  },{
+    "season": 2025,
+    "week": 16,
+    "manager_a_id": "Tig Ol Griddys",
+    "score_a": 136.16,
+    "manager_b_id": "Dicker Downs",
+    "score_b": 122.72,
+    "winner_id": "Tig Ol Griddys",
+    "notes": "",
+    "week_type": "consolation"
+  },{
+    "season": 2025,
+    "week": 16,
+    "manager_a_id": "We Get Big Ol TDs",
+    "score_a": 135.70,
+    "manager_b_id": "Alabama Assault",
+    "score_b": 91.34,
+    "winner_id": "We Get Big Ol TDs",
+    "notes": "",
+    "week_type": "consolation"
+  },{
+    "season": 2025,
+    "week": 16,
+    "manager_a_id": "SF 49ers Played Me",
+    "score_a": 126.60,
+    "manager_b_id": "Odunze Day",
+    "score_b": 148.90,
+    "winner_id": "Odunze Day",
+    "notes": "",
+    "week_type": "quarter final"
+  },{
+    "season": 2025,
+    "week": 16,
+    "manager_a_id": "Caleb and The Revolution",
+    "score_a": 131.30,
+    "manager_b_id": "Same Season Diff Team",
+    "score_b": 116.30,
+    "winner_id": "Caleb and The Revolution",
+    "notes": "",
+    "week_type": "quarter final"
+  },{
+    "season": 2025,
+    "week": 16,
+    "manager_a_id": "Stafford Infection",
+    "score_a": 159.28,
+    "manager_b_id": "Bobz Cartel",
+    "score_b": 107.50,
+    "winner_id": "Stafford Infection",
+    "notes": "",
+    "week_type": "consolation"
+  }
+
+    ,{
+    "season": 2025,
+    "week": 17,
+    "manager_a_id": "Commishin aint easy",
+    "score_a": 65.98,
+    "manager_b_id": "Bobz Cartel",
+    "score_b": 108.50,
+    "winner_id": "Bobz Cartel",
+    "notes": "",
+    "week_type": "seventh place"
+  },{
+    "season": 2025,
+    "week": 17,
+    "manager_a_id": "Tig Ol Griddys",
+    "score_a": 83.18,
+    "manager_b_id": "We Get Big Ol TDs",
+    "score_b": 100.14,
+    "winner_id": "We Get Big Ol TDs",
+    "notes": "",
+    "week_type": "consolation championship"
+  },{
+    "season": 2025,
+    "week": 17,
+    "manager_a_id": "Dicker Downs",
+    "score_a": 106.88,
+    "manager_b_id": "Alabama Assault",
+    "score_b": 89.48,
+    "winner_id": "Dicker Downs",
+    "notes": "",
+    "week_type": "eleventh place"
+  },{
+    "season": 2025,
+    "week": 17,
+    "manager_a_id": "Odunze Day",
+    "score_a": 118.18,
+    "manager_b_id": "Caleb and The Revolution",
+    "score_b": 111.46,
+    "winner_id": "Odunze Day",
+    "notes": "",
+    "week_type": "championship"
+  },{
+    "season": 2025,
+    "week": 17,
+    "manager_a_id": "SF 49ers Played Me",
+    "score_a": 116.66,
+    "manager_b_id": "Same Season Diff Team",
+    "score_b": 55.80,
+    "winner_id": "SF 49ers Played Me",
+    "notes": "",
+    "week_type": "third place"
+  },{
+    "season": 2025,
+    "week": 17,
+    "manager_a_id": "Stew's Super Quokkas",
+    "score_a": 159.30,
+    "manager_b_id": "Stafford Infection",
+    "score_b": 87.84,
+    "winner_id": "Stew's Super Quokkas",
+    "notes": "",
+    "week_type": "fifth place"
+  }
 ]
