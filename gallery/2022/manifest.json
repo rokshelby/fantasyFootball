@@ -4,7 +4,12 @@
   ],
 
   "videos": [
-    "videos/IMG_3239.mp4"
+   
+        {
+      "youtubeId": "_nFP_u7B-n4",
+      "title": "End of the season 2021",
+      "date": "2022-01-05"
+    }
 
   ]
 }
