@@ -3,7 +3,7 @@ let currentType = "photos";
 
 async function loadMedia() {
   const year = document.getElementById("yearSelect").value;
-  const res = await fetch(`../gallery/${year}/manifest.json`);
+  const res = await fetch(`gallery/${year}/manifest.json`);
   const data = await res.json();
 
   const gallery = document.getElementById("gallery");
@@ -12,7 +12,7 @@ async function loadMedia() {
   data[currentType].forEach(file => {
     if (currentType === "photos") {
       gallery.innerHTML += `
-        <img src="../gallery/${year}/${file}" loading="lazy">
+        <img src="gallery/${year}/${file}" loading="lazy">
       `;
     } else {
       gallery.innerHTML += `
