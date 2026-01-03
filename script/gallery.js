@@ -16,9 +16,14 @@ async function loadMedia() {
       `;
     } else {
       gallery.innerHTML += `
-        <video controls preload="metadata">
-          <source src="../gallery/${year}/${file}">
-        </video>
+        <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/${item.youtubeId}"
+          title="${item.title}"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
       `;
     }
   });
