@@ -4,7 +4,11 @@
   ],
 
   "videos": [
-    "videos/IMG_0495.mp4"
+    {
+      "youtubeID": "KGjyMy_wypQ",
+      "title": "Draft Night 2021",
+      "date": "2021-07-08"
+    }
 
   ]
 }
