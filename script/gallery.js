@@ -18,8 +18,8 @@ async function loadMedia() {
       gallery.innerHTML += `
         <div class="video-wrapper">
         <iframe
-          src="https://www.youtube.com/embed/${item.youtubeId}"
-          title="${item.title}"
+          src="https://www.youtube.com/embed/${file.youtubeId}"
+          title="${file.title}"
           loading="lazy"
           allowfullscreen>
         </iframe>
