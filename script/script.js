@@ -2,9 +2,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Load header first
   fetch("header.html")
-    .then(res => res.text())
+    .then(res => {
+      if (!res.ok) throw new Error(`header.html not found (${res.status})`);
+      return res.text();
+    })
     .then(data => {
-      document.getElementById("header-include").innerHTML = data;
+      const headerEl = document.getElementById("header-include");
+      if (!headerEl) {
+        console.error("No #header-include element found — header not injected.");
+        return;
+      }
+      headerEl.innerHTML = data;
 
       // ✅ Fix Home link after header is loaded
       const homeLink = document.querySelector('a[href="/"]');
