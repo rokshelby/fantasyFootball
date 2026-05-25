@@ -115,6 +115,7 @@ function setupCompareButton(managersData) {
     let numM1Wins = 0;
     let numM2Wins = 0;
     let numTies = 0;
+    // TODO: Fix avgScore accumulation (currently only adds on wins) and display in Match Summary
     let avgScoreM1 = 0;
     let avgScoreM2 = 0;
 
@@ -204,7 +205,7 @@ html += `
   Week ${lastMatch.week || 'N/A'}, Season ${lastMatch.season || 'N/A'}<br>
   Scores: ${m1} (${lastMatch.manager_a_id === m1 ? lastMatch.score_a : lastMatch.score_b}) 
   vs ${m2} (${lastMatch.manager_a_id === m1 ? lastMatch.score_b : lastMatch.score_a})<br>
-  Winner: <span class="${winnerClass}" ${lastMatch.winner_id === m1 ? 'manager1' : lastMatch.winner_id === m2 ? 'manager2' : 'tie'}">
+  Winner: <span class="${winnerClass}">
     ${lastMatch.winner_id || 'Tie'}
   </span>
 </div>

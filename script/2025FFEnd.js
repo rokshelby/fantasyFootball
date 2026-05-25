@@ -49,7 +49,7 @@ async function loadWeek4(){
             </div>
             <div class="manager-row">
             <h5>${manager.trashTracker}</h5>
-            <img src= ${manager.image}>
+            <img src="${manager.image}">
             </div>
             `;
             
