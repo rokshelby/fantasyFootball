@@ -1,5 +1,5 @@
 const week4container = document.getElementById('week4-container');
-loadWeek4();
+loadWeek4().catch(err => console.error('Error in loadWeek4:', err));
 async function loadMatches(){
 
     try{
