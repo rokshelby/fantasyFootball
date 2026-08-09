@@ -98,5 +98,11 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     .catch(err => console.error('Error loading header:', err));
 
-    
+  // Resize any same-origin iframes to fit their content height
+  document.querySelectorAll('iframe').forEach(frame => {
+    frame.addEventListener('load', () => {
+      frame.style.height = frame.contentWindow.document.body.scrollHeight + 'px';
+    });
+  });
+
 });
