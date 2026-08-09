@@ -1,4 +1,4 @@
-const targetDate = new Date("2025-12-11T07:14:59").getTime();
+const targetDate = new Date("2026-09-03T06:29:59").getTime();
 let timer;
 let lastValues = {};
 

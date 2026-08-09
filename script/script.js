@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Resize any same-origin iframes to fit their content height
   document.querySelectorAll('iframe').forEach(frame => {
     frame.addEventListener('load', () => {
-      frame.style.height = frame.contentWindow.document.body.scrollHeight + 'px';
+      frame.style.height = (frame.contentWindow.document.body.scrollHeight + 500) + 'px';
     });
   });
 

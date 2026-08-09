@@ -1,0 +1,24 @@
+[
+  {
+    "season": 2016,
+    "week": 13,
+    "manager_a_id": "SF 49ers Played Me",
+    "score_a": 100,
+    "manager_b_id": "Roach",
+    "score_b": 99,
+    "winner_id": "SF 49ers Played Me",
+    "notes": "",
+    "week_type": "championship"
+  },
+  {
+    "season": 2016,
+    "week": 13,
+    "manager_a_id": "Odunze Day",
+    "score_a": 100,
+    "manager_b_id": "Fake Manager",
+    "score_b": 99,
+    "winner_id": "Odunze Day",
+    "notes": "",
+    "week_type": "third place"
+  }
+]

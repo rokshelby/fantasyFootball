@@ -3,7 +3,7 @@ loadWeek2025().catch(err => console.error('Error in loadWeek4:', err));
 async function loadMatches(){
 
     try{
-        const res = await fetch("data/matches.json");
+        const res = await fetch("matches2025.json");
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
 
         const allMatches = await res.json();
@@ -18,15 +18,14 @@ async function loadMatches(){
 async function loadWeek2025(){
 
     const allMatches = await loadMatches();
-    fetch('archive/2025/2025SeasonReview.json')
+    fetch('2025SeasonReview.json')
     .then(response => response.json())
     .then(data => {
         data.managers.forEach(manager => {
             const card = document.createElement('div');
             card.className = 'card-report';
-            const matchesInSeason = allMatches.filter(m => m.season === 2025)
 
-            const managerMatches = matchesInSeason.filter(match => 
+            const managerMatches = allMatches.filter(match =>
                 match.manager_a_id === manager.name || match.manager_b_id === manager.name
             );  
             let totalScore = 0;

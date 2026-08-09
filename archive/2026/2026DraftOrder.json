@@ -1,0 +1,61 @@
+{
+  "managers": [
+    {
+      "name": "Same Season Diff Team",
+      "order": "1"
+    },
+    {
+      "name": "Dicker Downs",
+      "order": "7"
+    },
+    {
+      "name": "Odunze Day",
+      "order": "3"
+},
+    {
+      "name": "Tig Ol Griddys",
+      "order": "6"
+
+    },
+    {
+      "name": "We Get Big Ol TDs",
+      "order": "2"
+
+    },
+    {
+      "name": "Alabama Assaul",
+      "order": "3"
+
+    },
+    {
+      "name": "Team 5",
+      "order": "11"
+
+    },
+    {
+      "name": "Bobz Cartel",
+      "order": "5"
+
+    },
+    {
+      "name": "Caleb and The Revolution",
+      "order": "8"
+
+    },
+    {
+      "name": "Stafford Infection",
+      "order": "12"
+
+    },
+    {
+      "name": "Stew's Super Quokkas",
+      "order": "9"
+
+    },
+    {
+      "name": "Commishin aint Easy",
+      "order": "4"
+
+    }
+  ]
+}

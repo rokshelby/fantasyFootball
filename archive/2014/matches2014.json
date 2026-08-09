@@ -1,0 +1,24 @@
+[
+  {
+    "season": 2014,
+    "week": 13,
+    "manager_a_id": "Odunze Day",
+    "score_a": 100,
+    "manager_b_id": "Same Season Diff Team",
+    "score_b": 99,
+    "winner_id": "Odunze Day",
+    "notes": "",
+    "week_type": "championship"
+  },
+  {
+    "season": 2014,
+    "week": 13,
+    "manager_a_id": "Koming for the Krown",
+    "score_a": 100,
+    "manager_b_id": "Fake Manager",
+    "score_b": 99,
+    "winner_id": "Koming for the Krown",
+    "notes": "",
+    "week_type": "third place"
+  }
+]
