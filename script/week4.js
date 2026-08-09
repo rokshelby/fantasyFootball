@@ -18,7 +18,7 @@ async function loadMatches(){
 async function loadWeek4(){
 
     const allMatches = await loadMatches();
-    fetch('data/2025week4.json')
+    fetch('archive/2025/2025week4.json')
     .then(response => response.json())
     .then(data => {
         data.managers.forEach(manager => {

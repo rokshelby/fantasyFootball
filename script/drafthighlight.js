@@ -1,6 +1,6 @@
 const highlightsContainer = document.getElementById('draft-highlights');
 
-fetch('data/draft2025.json')
+fetch('archive/2025/draft2025.json')
   .then(response => response.json())
   .then(data => {
     data.teams.forEach(team => {

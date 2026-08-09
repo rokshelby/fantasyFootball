@@ -1,5 +1,5 @@
 // Replace this JSON with your actual JSON file or data
-fetch('data/draft2025.json')
+fetch('archive/2025/draft2025.json')
   .then(response => {
     if (!response.ok) throw new Error('Network response was not ok');
     return response.json();

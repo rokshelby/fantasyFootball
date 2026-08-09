@@ -18,7 +18,7 @@ async function loadMatches(){
 async function loadWeek2025(){
 
     const allMatches = await loadMatches();
-    fetch('data/2025SeasonReview.json')
+    fetch('archive/2025/2025SeasonReview.json')
     .then(response => response.json())
     .then(data => {
         data.managers.forEach(manager => {
