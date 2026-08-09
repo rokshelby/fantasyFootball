@@ -1,5 +1,5 @@
-const week4container = document.getElementById('week4-container');
-loadWeek4().catch(err => console.error('Error in loadWeek4:', err));
+const week4container = document.getElementById('2025container');
+loadWeek2025().catch(err => console.error('Error in loadWeek4:', err));
 async function loadMatches(){
 
     try{
@@ -15,7 +15,7 @@ async function loadMatches(){
 }
 
 
-async function loadWeek4(){
+async function loadWeek2025(){
 
     const allMatches = await loadMatches();
     fetch('data/2025SeasonReview.json')
