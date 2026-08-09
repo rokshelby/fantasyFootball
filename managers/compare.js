@@ -115,7 +115,6 @@ function setupCompareButton(managersData) {
     let numM1Wins = 0;
     let numM2Wins = 0;
     let numTies = 0;
-    // TODO: Fix avgScore accumulation (currently only adds on wins) and display in Match Summary
     let avgScoreM1 = 0;
     let avgScoreM2 = 0;
 
@@ -139,12 +138,13 @@ function setupCompareButton(managersData) {
         scoreM2 = match.score_a;
       }
 
+      avgScoreM1 += scoreM1 || 0;
+      avgScoreM2 += scoreM2 || 0;
+
       if (match.winner_id === m1) {
         numM1Wins++;
-        avgScoreM1 += scoreM1 || 0;
       } else if (match.winner_id === m2) {
         numM2Wins++;
-        avgScoreM2 += scoreM2 || 0;
       } else {
         numTies++;
       }
@@ -169,6 +169,9 @@ function setupCompareButton(managersData) {
     });
     
     const lastMatch = matchesBetween[0];
+
+  const avgM1 = (avgScoreM1 / matchesBetween.length).toFixed(1);
+  const avgM2 = (avgScoreM2 / matchesBetween.length).toFixed(1);
 
   const winnerClass = lastMatch.winner_id ? (lastMatch.winner_id === m1 ? 'manager1' : lastMatch.winner_id === m2 ? 'manager2' : 'tie') : 'tie';  
 
@@ -198,7 +201,15 @@ html += `
     <strong>${numTies}</strong>
   </div>
 
-  
+  <div class="summary-row">
+    <span>${m1} Avg Score:</span>
+    <strong>${avgM1}</strong>
+  </div>
+
+  <div class="summary-row">
+    <span>${m2} Avg Score:</span>
+    <strong>${avgM2}</strong>
+  </div>
 
 <div class="last-match-summary">
   <strong>Last Match:</strong><br>
