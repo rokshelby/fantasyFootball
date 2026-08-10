@@ -1,8 +1,8 @@
 import json
 import csv
 
-input_file = "./archive/2025/draft2025.csv"
-output_file = "./archive/2025/draft2025.json"
+input_file = "./archive/2024/draft2024.csv"
+output_file = "./archive/2024/draft2024.json"
 
 teams = {}  # dictionary keyed by manager name
 picks = []  # flat list of all picks (to assign rounds/picks)
