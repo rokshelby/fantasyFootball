@@ -1,4 +1,5 @@
 async function loadDraftAnalysis(year) {
+  const section = document.getElementById('draft-analysis-section');
   const analysisContainer = document.getElementById('draft-analysis-container');
   analysisContainer.innerHTML = '';
 
@@ -6,6 +7,8 @@ async function loadDraftAnalysis(year) {
     const response = await fetch(`archive/${year}/draft-analysis${year}.json`);
     if (!response.ok) throw new Error('Network response was not ok');
     const managersData = await response.json();
+
+    section.style.display = '';
 
     managersData.managers.forEach(manager => {
       const managerDiv = document.createElement('div');
@@ -23,6 +26,6 @@ async function loadDraftAnalysis(year) {
     });
   } catch (err) {
     console.error('Error loading draft analysis:', err);
-    analysisContainer.innerHTML = '<p>No draft analysis available for this year.</p>';
+    section.style.display = 'none';
   }
 }

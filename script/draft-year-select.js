@@ -1,5 +1,5 @@
 // Add a year here once it has archive/<year>/draft<year>.json and/or draft-analysis<year>.json
-const DRAFT_YEARS = [2026, 2025];
+const DRAFT_YEARS = [2026, 2025,2024,2023,2022,2021,2020];
 
 document.addEventListener('DOMContentLoaded', () => {
   const select = document.getElementById('draftYearSelect');
