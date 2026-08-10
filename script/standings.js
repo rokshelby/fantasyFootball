@@ -13,35 +13,83 @@ const managerColors = {
   "Odunze Day": "yellow"
 };
 
-document.addEventListener("DOMContentLoaded", async () => {
+// Fallback palette for names that don't match managerColors (older/renamed teams)
+const fallbackPalette = ["gray", "indigo", "coral", "olive", "navy", "maroon", "steelblue"];
+function colorFor(name, index) {
+  return managerColors[name] || fallbackPalette[index % fallbackPalette.length];
+}
+
+// Years with a full regular season archived at archive/<year>/matches<year>.json
+const STANDINGS_YEARS = [2025, 2024, 2023, 2022, 2021, 2020];
+
+let rankChart, pointsChart;
+
+// Reconstructs weekly rank + cumulative points from raw regular-season matches.
+// This is calculated on the fly (wins, then points-for as tiebreaker) — it is
+// not necessarily identical to any historically recorded platform standings.
+function computeWeeklyStandings(matches) {
+  const regSeason = matches.filter(m => m.week_type === 'regular_season');
+  const weeks = Array.from(new Set(regSeason.map(m => m.week))).sort((a, b) => a - b);
+
+  const names = Array.from(new Set(regSeason.flatMap(m => [m.manager_a_id, m.manager_b_id])));
+
+  const stats = {};
+  names.forEach(name => { stats[name] = { wins: 0, pointsFor: 0 }; });
+
+  const rankByWeek = {};
+  const pointsByWeek = {};
+  names.forEach(name => { rankByWeek[name] = []; pointsByWeek[name] = []; });
+
+  weeks.forEach(week => {
+    regSeason.filter(m => m.week === week).forEach(m => {
+      stats[m.manager_a_id].pointsFor += m.score_a;
+      stats[m.manager_b_id].pointsFor += m.score_b;
+
+      if (m.winner_id === m.manager_a_id) {
+        stats[m.manager_a_id].wins++;
+      } else if (m.winner_id === m.manager_b_id) {
+        stats[m.manager_b_id].wins++;
+      }
+    });
+
+    const ranked = [...names].sort((a, b) => {
+      if (stats[b].wins !== stats[a].wins) return stats[b].wins - stats[a].wins;
+      return stats[b].pointsFor - stats[a].pointsFor;
+    });
+
+    ranked.forEach((name, i) => {
+      rankByWeek[name].push(i + 1);
+      pointsByWeek[name].push(Math.round(stats[name].pointsFor * 100) / 100);
+    });
+  });
+
+  return { weeks, names, rankByWeek, pointsByWeek };
+}
+
+async function loadStandingsYear(year) {
+  const highScoresSection = document.getElementById("weeklyHighScores");
+  highScoresSection.innerHTML = '';
+
   try {
-    const [standingsRes, standings2Res, matchesRes] = await Promise.all([
-      fetch("data/standings.json"),
-      fetch("data/standingsW7-13.json"),
-      fetch("data/matches.json")
-    ]);
+    const res = await fetch(`archive/${year}/matches${year}.json`);
+    if (!res.ok) throw new Error(`Failed to load matches for ${year}`);
+    const matches = await res.json();
 
-    if (!standingsRes.ok || !standings2Res.ok || !matchesRes.ok) {
-      throw new Error("Failed to load data");
-    }
+    const { weeks, names, rankByWeek, pointsByWeek } = computeWeeklyStandings(matches);
 
-    const [standingsData, standings2Data, allMatches] = await Promise.all([
-      standingsRes.json(),
-      standings2Res.json(),
-      matchesRes.json()
-    ]);
+    if (rankChart) rankChart.destroy();
+    if (pointsChart) pointsChart.destroy();
 
-    // Chart 1
     const ctx1 = document.getElementById("managersLineChart").getContext("2d");
-    new Chart(ctx1, {
+    rankChart = new Chart(ctx1, {
       type: "line",
       data: {
-        labels: standingsData.weeks,
-        datasets: standingsData.managers.map(manager => ({
-          label: manager.name,
-          data: manager.scores,
-          borderColor: managerColors[manager.name] || "gray",
-          backgroundColor: managerColors[manager.name] || "gray",
+        labels: weeks.map(w => `W${w}`),
+        datasets: names.map((name, i) => ({
+          label: name,
+          data: rankByWeek[name],
+          borderColor: colorFor(name, i),
+          backgroundColor: colorFor(name, i),
           tension: 0.3,
           fill: false
         }))
@@ -51,13 +99,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         maintainAspectRatio: false,
         plugins: {
           legend: { position: "bottom" },
-          title: { display: true, text: "League Standing" }
+          title: { display: true, text: `${year} League Standing (Calculated)` }
         },
         scales: {
           y: {
             reverse: true,
             suggestedMin: 0.5,
-            suggestedMax: 12.5,
+            suggestedMax: names.length + 0.5,
             ticks: { stepSize: 1, callback: value => `#${value}` },
             title: { display: true, text: "League Standing" }
           },
@@ -66,17 +114,16 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     });
 
-    // Chart 2
     const ctx2 = document.getElementById("managersLineChart2").getContext("2d");
-    new Chart(ctx2, {
+    pointsChart = new Chart(ctx2, {
       type: "line",
       data: {
-        labels: standings2Data.weeks,
-        datasets: standings2Data.managers.map(manager => ({
-          label: manager.name,
-          data: manager.scores,
-          borderColor: managerColors[manager.name] || "gray",
-          backgroundColor: managerColors[manager.name] || "gray",
+        labels: weeks.map(w => `W${w}`),
+        datasets: names.map((name, i) => ({
+          label: name,
+          data: pointsByWeek[name],
+          borderColor: colorFor(name, i),
+          backgroundColor: colorFor(name, i),
           tension: 0.3,
           fill: false
         }))
@@ -86,29 +133,20 @@ document.addEventListener("DOMContentLoaded", async () => {
         maintainAspectRatio: false,
         plugins: {
           legend: { position: "bottom" },
-          title: { display: true, text: "League Standing" }
+          title: { display: true, text: `${year} Cumulative Points For (Calculated)` }
         },
         scales: {
-          y: {
-            reverse: true,
-            suggestedMin: 0.5,
-            suggestedMax: 12.5,
-            ticks: { stepSize: 1, callback: value => `#${value}` },
-            title: { display: true, text: "League Standing" }
-          },
+          y: { title: { display: true, text: "Total Points" } },
           x: { title: { display: true, text: "Week" } }
         }
       }
     });
 
-    // Weekly high scores
-    let getWeeks = new Set(allMatches.filter(g => g.season === 2025).map(g => g.week));
-    getWeeks = Array.from(getWeeks).sort((a, b) => b - a);
+    // Weekly high scores (across all weeks, including playoffs)
+    let allWeeks = Array.from(new Set(matches.map(g => g.week))).sort((a, b) => b - a);
 
-    const section = document.getElementById("weeklyHighScores");
-
-    for (let w of getWeeks) {
-      const weekGames = allMatches.filter(g => g.season === 2025 && g.week === w);
+    for (let w of allWeeks) {
+      const weekGames = matches.filter(g => g.week === w);
 
       let highScore = -Infinity;
       let highManager = null;
@@ -124,17 +162,33 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
       }
 
-      if (section) {
-        section.innerHTML += `
-          <div class="week-header"></div>
-          <ul>
-            <li>Week ${w} - High Score: ${highManager} (${highScore} pts)</li>
-          </ul>
-        `;
-      }
+      highScoresSection.innerHTML += `
+        <div class="week-header"></div>
+        <ul>
+          <li>Week ${w} - High Score: ${highManager} (${highScore} pts)</li>
+        </ul>
+      `;
     }
 
   } catch (err) {
     console.error("Error loading standings data:", err);
+    highScoresSection.innerHTML = '<p>No standings data available for this year.</p>';
   }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const select = document.getElementById("standingsYearSelect");
+  if (!select) return;
+
+  STANDINGS_YEARS.forEach(year => {
+    const option = document.createElement("option");
+    option.value = year;
+    option.textContent = year;
+    select.appendChild(option);
+  });
+
+  select.addEventListener("change", () => loadStandingsYear(select.value));
+
+  select.value = STANDINGS_YEARS[0];
+  loadStandingsYear(select.value);
 });
