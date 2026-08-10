@@ -95,7 +95,7 @@ async function loadStandingsYear(year) {
         }))
       },
       options: {
-        responsive: false,
+        responsive: true,
         maintainAspectRatio: false,
         plugins: {
           legend: { position: "bottom" },
@@ -129,7 +129,7 @@ async function loadStandingsYear(year) {
         }))
       },
       options: {
-        responsive: false,
+        responsive: true,
         maintainAspectRatio: false,
         plugins: {
           legend: { position: "bottom" },

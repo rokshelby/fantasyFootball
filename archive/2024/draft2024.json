@@ -1,3 +1,959 @@
 {
-  "teams": []
+  "teams": [
+    {
+      "name": "SF 49ers Played Me",
+      "picks": [
+        {
+          "round": 1,
+          "pick": 1,
+          "player": "Christian McCaffrey"
+        },
+        {
+          "round": 2,
+          "pick": 24,
+          "player": "Rachaad White"
+        },
+        {
+          "round": 3,
+          "pick": 25,
+          "player": "Alvin Kamara"
+        },
+        {
+          "round": 4,
+          "pick": 48,
+          "player": "Patrick Mahomes"
+        },
+        {
+          "round": 5,
+          "pick": 49,
+          "player": "DK Metcalf"
+        },
+        {
+          "round": 6,
+          "pick": 72,
+          "player": "Zay Flowers"
+        },
+        {
+          "round": 7,
+          "pick": 73,
+          "player": "Rashee Rice"
+        },
+        {
+          "round": 8,
+          "pick": 96,
+          "player": "Zack Moss"
+        },
+        {
+          "round": 9,
+          "pick": 97,
+          "player": "David Njoku"
+        },
+        {
+          "round": 10,
+          "pick": 120,
+          "player": "Josh Palmer"
+        },
+        {
+          "round": 11,
+          "pick": 121,
+          "player": "Justin Tucker"
+        },
+        {
+          "round": 12,
+          "pick": 144,
+          "player": "Dalton Schultz"
+        },
+        {
+          "round": 13,
+          "pick": 145,
+          "player": "Tyler Lockett"
+        },
+        {
+          "round": 14,
+          "pick": 168,
+          "player": "Kansas City Chiefs"
+        },
+        {
+          "round": 15,
+          "pick": 169,
+          "player": "Baker Mayfield"
+        }
+      ]
+    },
+    {
+      "name": "Alabama Assault",
+      "picks": [
+        {
+          "round": 1,
+          "pick": 2,
+          "player": "Breece Hall"
+        },
+        {
+          "round": 2,
+          "pick": 23,
+          "player": "De'Von Achane"
+        },
+        {
+          "round": 3,
+          "pick": 26,
+          "player": "Josh Jacobs"
+        },
+        {
+          "round": 4,
+          "pick": 47,
+          "player": "Amari Cooper"
+        },
+        {
+          "round": 5,
+          "pick": 50,
+          "player": "DJ Moore"
+        },
+        {
+          "round": 6,
+          "pick": 71,
+          "player": "George Pickens"
+        },
+        {
+          "round": 7,
+          "pick": 74,
+          "player": "Caleb Williams"
+        },
+        {
+          "round": 8,
+          "pick": 95,
+          "player": "Brock Bowers"
+        },
+        {
+          "round": 9,
+          "pick": 98,
+          "player": "DeAndre Hopkins"
+        },
+        {
+          "round": 10,
+          "pick": 119,
+          "player": "Courtland Sutton"
+        },
+        {
+          "round": 11,
+          "pick": 122,
+          "player": "Ezekiel Elliott"
+        },
+        {
+          "round": 12,
+          "pick": 143,
+          "player": "Brandon Aubrey"
+        },
+        {
+          "round": 13,
+          "pick": 146,
+          "player": "Chicago Bears"
+        },
+        {
+          "round": 14,
+          "pick": 167,
+          "player": "Isaiah Likely"
+        },
+        {
+          "round": 15,
+          "pick": 170,
+          "player": "Russell Wilson"
+        }
+      ]
+    },
+    {
+      "name": "Barry McCockiner",
+      "picks": [
+        {
+          "round": 1,
+          "pick": 3,
+          "player": "Tyreek Hill"
+        },
+        {
+          "round": 2,
+          "pick": 22,
+          "player": "Mike Evans"
+        },
+        {
+          "round": 3,
+          "pick": 27,
+          "player": "Kenneth Walker III"
+        },
+        {
+          "round": 4,
+          "pick": 46,
+          "player": "Lamar Jackson"
+        },
+        {
+          "round": 5,
+          "pick": 51,
+          "player": "Raheem Mostert"
+        },
+        {
+          "round": 6,
+          "pick": 70,
+          "player": "Christian Kirk"
+        },
+        {
+          "round": 7,
+          "pick": 75,
+          "player": "Terry McLaurin"
+        },
+        {
+          "round": 8,
+          "pick": 94,
+          "player": "Jake Ferguson"
+        },
+        {
+          "round": 9,
+          "pick": 99,
+          "player": "Gus Edwards"
+        },
+        {
+          "round": 10,
+          "pick": 118,
+          "player": "Curtis Samuel"
+        },
+        {
+          "round": 11,
+          "pick": 123,
+          "player": "Pat Freiermuth"
+        },
+        {
+          "round": 12,
+          "pick": 142,
+          "player": "Antonio Gibson"
+        },
+        {
+          "round": 13,
+          "pick": 147,
+          "player": "Aaron Rodgers"
+        },
+        {
+          "round": 14,
+          "pick": 166,
+          "player": "Jake Moody"
+        },
+        {
+          "round": 15,
+          "pick": 171,
+          "player": "Cincinnati Bengals"
+        }
+      ]
+    },
+    {
+      "name": "Stafford Infection",
+      "picks": [
+        {
+          "round": 1,
+          "pick": 4,
+          "player": "Bijan Robinson"
+        },
+        {
+          "round": 2,
+          "pick": 21,
+          "player": "Isiah Pacheco"
+        },
+        {
+          "round": 3,
+          "pick": 28,
+          "player": "Travis Kelce"
+        },
+        {
+          "round": 4,
+          "pick": 45,
+          "player": "Malik Nabers"
+        },
+        {
+          "round": 5,
+          "pick": 52,
+          "player": "Jalen Hurts"
+        },
+        {
+          "round": 6,
+          "pick": 69,
+          "player": "Kyle Pitts"
+        },
+        {
+          "round": 7,
+          "pick": 76,
+          "player": "Chris Godwin"
+        },
+        {
+          "round": 8,
+          "pick": 93,
+          "player": "Jameson Williams"
+        },
+        {
+          "round": 9,
+          "pick": 100,
+          "player": "Keon Coleman"
+        },
+        {
+          "round": 10,
+          "pick": 117,
+          "player": "Nick Chubb"
+        },
+        {
+          "round": 11,
+          "pick": 124,
+          "player": "Blake Corum"
+        },
+        {
+          "round": 12,
+          "pick": 141,
+          "player": "Zach Charbonnet"
+        },
+        {
+          "round": 13,
+          "pick": 148,
+          "player": "Jake Elliott"
+        },
+        {
+          "round": 14,
+          "pick": 165,
+          "player": "Miami Dolphins"
+        },
+        {
+          "round": 15,
+          "pick": 172,
+          "player": "Kirk Cousins"
+        }
+      ]
+    },
+    {
+      "name": "Commishin aint easy",
+      "picks": [
+        {
+          "round": 1,
+          "pick": 5,
+          "player": "Amon-Ra St. Brown"
+        },
+        {
+          "round": 2,
+          "pick": 20,
+          "player": "Marvin Harrison Jr."
+        },
+        {
+          "round": 3,
+          "pick": 29,
+          "player": "James Cook"
+        },
+        {
+          "round": 4,
+          "pick": 44,
+          "player": "David Montgomery"
+        },
+        {
+          "round": 5,
+          "pick": 53,
+          "player": "Trey McBride"
+        },
+        {
+          "round": 6,
+          "pick": 68,
+          "player": "Jayden Daniels"
+        },
+        {
+          "round": 7,
+          "pick": 77,
+          "player": "Tee Higgins"
+        },
+        {
+          "round": 8,
+          "pick": 92,
+          "player": "Brian Robinson"
+        },
+        {
+          "round": 9,
+          "pick": 101,
+          "player": "Jerome Ford"
+        },
+        {
+          "round": 10,
+          "pick": 116,
+          "player": "Brian Thomas Jr."
+        },
+        {
+          "round": 11,
+          "pick": 125,
+          "player": "Trevor Lawrence"
+        },
+        {
+          "round": 12,
+          "pick": 140,
+          "player": "Darnell Mooney"
+        },
+        {
+          "round": 13,
+          "pick": 149,
+          "player": "Keaton Mitchell"
+        },
+        {
+          "round": 14,
+          "pick": 164,
+          "player": "Minnesota Vikings"
+        },
+        {
+          "round": 15,
+          "pick": 173,
+          "player": "Jake Bates"
+        }
+      ]
+    },
+    {
+      "name": "Tig Ol Griddys",
+      "picks": [
+        {
+          "round": 1,
+          "pick": 6,
+          "player": "Justin Jefferson"
+        },
+        {
+          "round": 2,
+          "pick": 19,
+          "player": "Cooper Kupp"
+        },
+        {
+          "round": 3,
+          "pick": 30,
+          "player": "Joe Mixon"
+        },
+        {
+          "round": 4,
+          "pick": 43,
+          "player": "George Kittle"
+        },
+        {
+          "round": 5,
+          "pick": 54,
+          "player": "Najee Harris"
+        },
+        {
+          "round": 6,
+          "pick": 67,
+          "player": "Dak Prescott"
+        },
+        {
+          "round": 7,
+          "pick": 78,
+          "player": "Zamir White"
+        },
+        {
+          "round": 8,
+          "pick": 91,
+          "player": "Xavier Worthy"
+        },
+        {
+          "round": 9,
+          "pick": 102,
+          "player": "Khalil Shakir"
+        },
+        {
+          "round": 10,
+          "pick": 115,
+          "player": "Harrison Butker"
+        },
+        {
+          "round": 11,
+          "pick": 126,
+          "player": "Brock Purdy"
+        },
+        {
+          "round": 12,
+          "pick": 139,
+          "player": "Ty Chandler"
+        },
+        {
+          "round": 13,
+          "pick": 150,
+          "player": "Cole Kmet"
+        },
+        {
+          "round": 14,
+          "pick": 163,
+          "player": "Buffalo Bills"
+        },
+        {
+          "round": 15,
+          "pick": 174,
+          "player": "Gabe Davis"
+        }
+      ]
+    },
+    {
+      "name": "Koming for the Krown",
+      "picks": [
+        {
+          "round": 1,
+          "pick": 7,
+          "player": "A.J. Brown"
+        },
+        {
+          "round": 2,
+          "pick": 18,
+          "player": "Travis Etienne"
+        },
+        {
+          "round": 3,
+          "pick": 31,
+          "player": "Davante Adams"
+        },
+        {
+          "round": 4,
+          "pick": 42,
+          "player": "Mark Andrews"
+        },
+        {
+          "round": 5,
+          "pick": 55,
+          "player": "Michael Pittman"
+        },
+        {
+          "round": 6,
+          "pick": 66,
+          "player": "Jaylen Warren"
+        },
+        {
+          "round": 7,
+          "pick": 79,
+          "player": "Jared Goff"
+        },
+        {
+          "round": 8,
+          "pick": 90,
+          "player": "Austin Ekeler"
+        },
+        {
+          "round": 9,
+          "pick": 103,
+          "player": "San Francisco 49ers"
+        },
+        {
+          "round": 10,
+          "pick": 114,
+          "player": "Dallas Goedert"
+        },
+        {
+          "round": 11,
+          "pick": 127,
+          "player": "Mike Williams"
+        },
+        {
+          "round": 12,
+          "pick": 138,
+          "player": "Tua Tagovailoa"
+        },
+        {
+          "round": 13,
+          "pick": 151,
+          "player": "Dustin Hopkins"
+        },
+        {
+          "round": 14,
+          "pick": 162,
+          "player": "J.K. Dobbins"
+        },
+        {
+          "round": 15,
+          "pick": 175,
+          "player": "Jermaine Burton"
+        }
+      ]
+    },
+    {
+      "name": "We Get Big Ol TDs",
+      "picks": [
+        {
+          "round": 1,
+          "pick": 8,
+          "player": "Ja'Marr Chase"
+        },
+        {
+          "round": 2,
+          "pick": 17,
+          "player": "Derrick Henry"
+        },
+        {
+          "round": 3,
+          "pick": 32,
+          "player": "Nico Collins"
+        },
+        {
+          "round": 4,
+          "pick": 41,
+          "player": "Sam LaPorta"
+        },
+        {
+          "round": 5,
+          "pick": 56,
+          "player": "Josh Allen"
+        },
+        {
+          "round": 6,
+          "pick": 65,
+          "player": "Tony Pollard"
+        },
+        {
+          "round": 7,
+          "pick": 80,
+          "player": "Keenan Allen"
+        },
+        {
+          "round": 8,
+          "pick": 89,
+          "player": "Jordan Addison"
+        },
+        {
+          "round": 9,
+          "pick": 104,
+          "player": "Jaxon Smith-Njigba"
+        },
+        {
+          "round": 10,
+          "pick": 113,
+          "player": "Cleveland Browns"
+        },
+        {
+          "round": 11,
+          "pick": 128,
+          "player": "Matthew Stafford"
+        },
+        {
+          "round": 12,
+          "pick": 137,
+          "player": "Brandin Cooks"
+        },
+        {
+          "round": 13,
+          "pick": 152,
+          "player": "Tyler Allgeier"
+        },
+        {
+          "round": 14,
+          "pick": 161,
+          "player": "Tyler Conklin"
+        },
+        {
+          "round": 15,
+          "pick": 176,
+          "player": "Brayden Narveson"
+        }
+      ]
+    },
+    {
+      "name": "Death Row DeeBo",
+      "picks": [
+        {
+          "round": 1,
+          "pick": 9,
+          "player": "CeeDee Lamb"
+        },
+        {
+          "round": 2,
+          "pick": 16,
+          "player": "Drake London"
+        },
+        {
+          "round": 3,
+          "pick": 33,
+          "player": "Jaylen Waddle"
+        },
+        {
+          "round": 4,
+          "pick": 40,
+          "player": "James Conner"
+        },
+        {
+          "round": 5,
+          "pick": 57,
+          "player": "Dalton Kincaid"
+        },
+        {
+          "round": 6,
+          "pick": 64,
+          "player": "Jordan Love"
+        },
+        {
+          "round": 7,
+          "pick": 81,
+          "player": "Javonte Williams"
+        },
+        {
+          "round": 8,
+          "pick": 88,
+          "player": "Christian Watson"
+        },
+        {
+          "round": 9,
+          "pick": 105,
+          "player": "Jonathon Brooks"
+        },
+        {
+          "round": 10,
+          "pick": 112,
+          "player": "Chuba Hubbard"
+        },
+        {
+          "round": 11,
+          "pick": 129,
+          "player": "Jaleel McLaughlin"
+        },
+        {
+          "round": 12,
+          "pick": 136,
+          "player": "Romeo Doubs"
+        },
+        {
+          "round": 13,
+          "pick": 153,
+          "player": "Pittsburgh Steelers"
+        },
+        {
+          "round": 14,
+          "pick": 160,
+          "player": "Younghoe Koo"
+        },
+        {
+          "round": 15,
+          "pick": 177,
+          "player": "Jaylen Wright"
+        }
+      ]
+    },
+    {
+      "name": "Same Season Diff Team",
+      "picks": [
+        {
+          "round": 1,
+          "pick": 10,
+          "player": "Jonathan Taylor"
+        },
+        {
+          "round": 2,
+          "pick": 15,
+          "player": "Kyren Williams"
+        },
+        {
+          "round": 3,
+          "pick": 34,
+          "player": "D'Andre Swift"
+        },
+        {
+          "round": 4,
+          "pick": 39,
+          "player": "Brandon Aiyuk"
+        },
+        {
+          "round": 5,
+          "pick": 58,
+          "player": "Anthony Richardson"
+        },
+        {
+          "round": 6,
+          "pick": 63,
+          "player": "Calvin Ridley"
+        },
+        {
+          "round": 7,
+          "pick": 82,
+          "player": "Evan Engram"
+        },
+        {
+          "round": 8,
+          "pick": 87,
+          "player": "Diontae Johnson"
+        },
+        {
+          "round": 9,
+          "pick": 106,
+          "player": "Marquise Brown"
+        },
+        {
+          "round": 10,
+          "pick": 111,
+          "player": "Chase Brown"
+        },
+        {
+          "round": 11,
+          "pick": 130,
+          "player": "Adonai Mitchell"
+        },
+        {
+          "round": 12,
+          "pick": 135,
+          "player": "Justin Herbert"
+        },
+        {
+          "round": 13,
+          "pick": 154,
+          "player": "Trey Benson"
+        },
+        {
+          "round": 14,
+          "pick": 159,
+          "player": "Dallas Cowboys"
+        },
+        {
+          "round": 15,
+          "pick": 178,
+          "player": "Greg Zuerlein"
+        }
+      ]
+    },
+    {
+      "name": "Stew's Super Quokkas",
+      "picks": [
+        {
+          "round": 1,
+          "pick": 11,
+          "player": "Puka Nacua"
+        },
+        {
+          "round": 2,
+          "pick": 14,
+          "player": "Jahmyr Gibbs"
+        },
+        {
+          "round": 3,
+          "pick": 35,
+          "player": "Deebo Samuel Sr."
+        },
+        {
+          "round": 4,
+          "pick": 38,
+          "player": "DeVonta Smith"
+        },
+        {
+          "round": 5,
+          "pick": 59,
+          "player": "Kyler Murray"
+        },
+        {
+          "round": 6,
+          "pick": 62,
+          "player": "Tank Dell"
+        },
+        {
+          "round": 7,
+          "pick": 83,
+          "player": "Rhamondre Stevenson"
+        },
+        {
+          "round": 8,
+          "pick": 86,
+          "player": "Jayden Reed"
+        },
+        {
+          "round": 9,
+          "pick": 107,
+          "player": "Ladd McConkey"
+        },
+        {
+          "round": 10,
+          "pick": 110,
+          "player": "Joe Burrow"
+        },
+        {
+          "round": 11,
+          "pick": 131,
+          "player": "New York Jets"
+        },
+        {
+          "round": 12,
+          "pick": 134,
+          "player": "Rico Dowdle"
+        },
+        {
+          "round": 13,
+          "pick": 155,
+          "player": "Ka'imi Fairbairn"
+        },
+        {
+          "round": 14,
+          "pick": 158,
+          "player": "MarShawn Lloyd"
+        },
+        {
+          "round": 15,
+          "pick": 179,
+          "player": "Taysom Hill"
+        }
+      ]
+    },
+    {
+      "name": "Saint Clair County Caucasians",
+      "picks": [
+        {
+          "round": 1,
+          "pick": 12,
+          "player": "Saquon Barkley"
+        },
+        {
+          "round": 2,
+          "pick": 13,
+          "player": "Garrett Wilson"
+        },
+        {
+          "round": 3,
+          "pick": 36,
+          "player": "Chris Olave"
+        },
+        {
+          "round": 4,
+          "pick": 37,
+          "player": "Aaron Jones"
+        },
+        {
+          "round": 5,
+          "pick": 60,
+          "player": "Stefon Diggs"
+        },
+        {
+          "round": 6,
+          "pick": 61,
+          "player": "C.J. Stroud"
+        },
+        {
+          "round": 7,
+          "pick": 84,
+          "player": "Rome Odunze"
+        },
+        {
+          "round": 8,
+          "pick": 85,
+          "player": "Devin Singletary"
+        },
+        {
+          "round": 9,
+          "pick": 108,
+          "player": "Tyjae Spears"
+        },
+        {
+          "round": 10,
+          "pick": 109,
+          "player": "Baltimore Ravens"
+        },
+        {
+          "round": 11,
+          "pick": 132,
+          "player": "Jerry Jeudy"
+        },
+        {
+          "round": 12,
+          "pick": 133,
+          "player": "Luke Musgrave"
+        },
+        {
+          "round": 13,
+          "pick": 156,
+          "player": "Deshaun Watson"
+        },
+        {
+          "round": 14,
+          "pick": 157,
+          "player": "Evan McPherson"
+        }
+      ]
+    }
+  ]
 }

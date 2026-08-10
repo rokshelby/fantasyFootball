@@ -16,15 +16,13 @@
 
 .chart-container {
   width: 100%;
-  overflow-x: auto;   /* enables horizontal scroll */
+  max-width: 900px;
+  height: 650px;
+  margin: 0 auto 30px;
 }
 
-#managersLineChart {
-  min-width: 900px;   /* forces chart to be readable */
-  height: 500px;
-}
-
+#managersLineChart,
 #managersLineChart2 {
-  min-width: 900px;   /* forces chart to be readable */
-  height: 500px;
+  width: 100% !important;
+  height: 100% !important;
 }
