@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const res = await fetch('../data/managers.json');
     const managers = await res.json();
+    const aliasMap = ManagerResolver.buildAliasMap(managers);
 
 
     // Sort alphabetically by name
@@ -51,7 +52,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 return;
             }       // Fetch matches and calculate results
             const matchesRes = await fetch('../data/matches.json');
-            const allMatches = await matchesRes.json();
+            const rawMatches = await matchesRes.json();
+            const allMatches = ManagerResolver.normalizeMatches(rawMatches, aliasMap);
             const finishes = {}
 
 
@@ -144,8 +146,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           <h2>${manager.name}</h2>
          <p>Previous Names:</p>
         <ul>
-        ${manager.previous_team_names.length > 0 
-        ? manager.previous_team_names.map(name => `<li>${name}</li>`).join('') 
+        ${manager.previous_team_names.length > 0
+        ? manager.previous_team_names.map(entry => `<li>${entry.name}${entry.seasons && entry.seasons.length ? ` (${formatSeasons(entry.seasons)})` : ''}</li>`).join('')
         : '<li>N/A</li>'
         }
         </ul>
@@ -219,6 +221,15 @@ ${Object.keys(finishes).length > 0 ? `
     });
 });
 
+
+// [2022] -> "2022"; [2020,2021] -> "2020-2021"; [2011,2013] -> "2011, 2013"
+function formatSeasons(seasons) {
+    const sorted = [...seasons].sort((a, b) => a - b);
+    const isContiguous = sorted.every((s, i) => i === 0 || s === sorted[i - 1] + 1);
+    return isContiguous
+        ? (sorted.length > 1 ? `${sorted[0]}-${sorted[sorted.length - 1]}` : `${sorted[0]}`)
+        : sorted.join(', ');
+}
 
 function ordinalSuffix(i) {
     const j = i % 10, k = i % 100;

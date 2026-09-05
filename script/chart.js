@@ -8,8 +8,11 @@ try {
 
     if (!matchesRes.ok || !managersRes.ok) throw new Error("Failed to load data");
 
-    const allMatches = await matchesRes.json();
+    const rawMatches = await matchesRes.json();
     const managers = await managersRes.json();
+
+    const aliasMap = ManagerResolver.buildAliasMap(managers);
+    const allMatches = ManagerResolver.normalizeMatches(rawMatches, aliasMap);
 
     const managerMap = {};
     managers.forEach(m => (managerMap[m.name] = m.name));

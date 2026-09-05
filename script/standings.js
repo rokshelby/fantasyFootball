@@ -10,7 +10,7 @@ const managerColors = {
   "Stafford Infection": "cyan",
   "Stew's Super Quokkas": "magenta",
   "Alabama Assault": "lime",
-  "Odunze Day": "yellow"
+  "4XCAllowayIAM": "yellow"
 };
 
 // Fallback palette for names that don't match managerColors (older/renamed teams)
@@ -23,6 +23,7 @@ function colorFor(name, index) {
 const STANDINGS_YEARS = [2025, 2024, 2023, 2022, 2021, 2020];
 
 let rankChart, pointsChart;
+let aliasMapPromise;
 
 // Reconstructs weekly rank + cumulative points from raw regular-season matches.
 // This is calculated on the fly (wins, then points-for as tiebreaker) — it is
@@ -71,9 +72,15 @@ async function loadStandingsYear(year) {
   highScoresSection.innerHTML = '';
 
   try {
-    const res = await fetch(`archive/${year}/matches${year}.json`);
+    if (!aliasMapPromise) aliasMapPromise = ManagerResolver.loadAliasMap('data/managers.json');
+
+    const [res, aliasMap] = await Promise.all([
+      fetch(`archive/${year}/matches${year}.json`),
+      aliasMapPromise
+    ]);
     if (!res.ok) throw new Error(`Failed to load matches for ${year}`);
-    const matches = await res.json();
+    const rawMatches = await res.json();
+    const matches = ManagerResolver.normalizeMatches(rawMatches, aliasMap);
 
     const { weeks, names, rankByWeek, pointsByWeek } = computeWeeklyStandings(matches);
 

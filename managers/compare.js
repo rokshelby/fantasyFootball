@@ -10,10 +10,14 @@ async function init() {
 
     setupThemeToggle();
 
-    // Load managers.json
-    const managersRes = await fetch('../data/matches.json');
-    if (!managersRes.ok) throw new Error('Failed to load managers data');
-    const matches = await managersRes.json();
+    // Load matches + managers.json (for linking renamed teams to their current name)
+    const [matchesRes, aliasMap] = await Promise.all([
+      fetch('../data/matches.json'),
+      ManagerResolver.loadAliasMap('../data/managers.json')
+    ]);
+    if (!matchesRes.ok) throw new Error('Failed to load managers data');
+    const rawMatches = await matchesRes.json();
+    const matches = ManagerResolver.normalizeMatches(rawMatches, aliasMap);
 
     // Extract unique manager names from all matches, excluding "bye"
     const uniqueManagers = new Set();

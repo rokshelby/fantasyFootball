@@ -7,34 +7,68 @@
     "active": true,
     "joined_season": 2020,
     "previous_team_names": [
-      "Cant Gage This One - 2022",
-      "Gucci Flip Flops - 2020-2021"
+      {
+        "name": "Cant Gage This One",
+        "seasons": [
+          2022
+        ]
+      },
+      {
+        "name": "Gucci Flip Flops",
+        "seasons": [
+          2020,
+          2021
+        ]
+      }
     ],
     "nfl_team": "Chicago Bears",
     "bio": "will ruin perfect seasons.",
-    "notes" : "",
+    "notes": "",
     "twitter": "https://twitter.com/tucked_in_shirt",
     "instagram": "https://instagram.com/tucked_in_shirt"
   },
   {
     "id": "m02",
-    "name": "SF 49ers Played Me",
-    "team_name": "SF 49ers Played Me",
+    "name": "Team 13",
+    "team_name": "Team 13",
     "avatar_url": "../images/sf49ers.jpg",
     "active": true,
     "joined_season": 2020,
     "previous_team_names": [
-      "OnYaHead LikeMURRAYs - 2022-2023",
-      "Got W's Mixon my Kupp - 2021",
-      "I'll Name This Later - 2020"
+      {
+        "name": "SF 49ers Played Me",
+        "seasons": [
+          2024,
+          2025
+        ]
+      },
+      {
+        "name": "OnYaHead LikeMURRAYs",
+        "seasons": [
+          2022,
+          2023
+        ]
+      },
+      {
+        "name": "Got W's Mixon my Kupp",
+        "seasons": [
+          2021
+        ]
+      },
+      {
+        "name": "I'll Name This Later",
+        "seasons": [
+          2020
+        ]
+      }
     ],
     "nfl_team": "New York Giants",
     "bio": "ahhh once again victory formation.",
-    "notes" : "",
+    "notes": "",
     "twitter": null,
     "instagram": null
   },
-    {
+  {
     "id": "m03",
     "name": "Caleb and The Revolution",
     "team_name": "Caleb and The Revolution",
@@ -42,40 +76,95 @@
     "active": true,
     "joined_season": 2020,
     "previous_team_names": [
-      "Saint Clair County Durag Flaps - 2012-2024",
-      "Shiolin Wu-Tang Clan - 2011"
-      
-
-      
+      {
+        "name": "Saint Clair County Durag Flaps",
+        "seasons": [
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ]
+      },
+      {
+        "name": "Shiolin Wu-Tang Clan",
+        "seasons": [
+          2011
+        ]
+      }
     ],
     "nfl_team": "Chicago Bears",
     "bio": "manager been holding back the slander for a while.",
-    "notes" : "",
+    "notes": "",
     "twitter": null,
     "instagram": null
   },
   {
     "id": "m04",
-    "name": "Dicker Downs",
-    "team_name": "Dicker Downs",
+    "name": "Sutton My Face",
+    "team_name": "Sutton My Face",
     "avatar_url": "../images/oakland-raiders.svg",
     "active": true,
     "joined_season": 2020,
     "previous_team_names": [
-      "Barry McCockiner - 2024",
-      "Eatin' Aint Cheatin' - 2023",
-      "Watsonder My Towel - 2022",
-      "Gateway Ruggs - 2021",
-      "Shooter McGavin - 2020",
-      "Sandusky's Angels - 2012"
+      {
+        "name": "Dicker Downs",
+        "seasons": [
+          2025
+        ]
+      },
+      {
+        "name": "Barry McCockiner",
+        "seasons": [
+          2024
+        ]
+      },
+      {
+        "name": "Eatin' Aint Cheatin'",
+        "seasons": [
+          2023
+        ]
+      },
+      {
+        "name": "Watsonder My Towel",
+        "seasons": [
+          2022
+        ]
+      },
+      {
+        "name": "Gateway Ruggs",
+        "seasons": [
+          2021
+        ]
+      },
+      {
+        "name": "Shooter McGavin",
+        "seasons": [
+          2020
+        ]
+      },
+      {
+        "name": "Sandusky's Angels",
+        "seasons": [
+          2012
+        ]
+      }
     ],
     "nfl_team": "Las Vegas Raiders",
     "bio": "best manager names in the league!!!",
-    "notes" : "",
+    "notes": "",
     "twitter": null,
     "instagram": null
   },
-    {
+  {
     "id": "m05",
     "name": "Tig Ol Griddys",
     "team_name": "Tig Ol Griddys",
@@ -83,46 +172,85 @@
     "active": true,
     "joined_season": 2020,
     "previous_team_names": [
-      "How I Metcalf Your Mother - 2023",
-      "Super Mario-ta - 2020-2022"
+      {
+        "name": "How I Metcalf Your Mother",
+        "seasons": [
+          2023
+        ]
+      },
+      {
+        "name": "Super Mario-ta",
+        "seasons": [
+          2020,
+          2021,
+          2022
+        ]
+      }
     ],
     "nfl_team": "New England Patriots",
     "bio": "will have two kickers on the roster at all times.",
-    "notes" : "",
+    "notes": "",
     "twitter": null,
     "instagram": null
   },
   {
     "id": "m06",
-    "name": "Odunze Day",
-    "team_name": "Odunze Day",
+    "name": "4XCAllowayIAM",
+    "team_name": "4XCallowayIAM",
     "avatar_url": "../images/deathrowdeebo.png",
     "active": true,
     "joined_season": 2020,
     "previous_team_names": [
-      "Death Row Deebo - 2023-2024",
-      "Get it outha MUD - 2021-2022",
-        "GodCalloway - 2020",
-        "Calloway's Killa Kings - 2013"
-      ],
+      {
+        "name": "Odunze Day",
+        "seasons": [
+          2025
+        ]
+      },
+      {
+        "name": "Death Row Deebo",
+        "seasons": [
+          2023,
+          2024
+        ]
+      },
+      {
+        "name": "Get it outha MUD",
+        "seasons": [
+          2021,
+          2022
+        ]
+      },
+      {
+        "name": "GodCalloway",
+        "seasons": [
+          2020
+        ]
+      },
+      {
+        "name": "Calloway's Killa Kings",
+        "seasons": [
+          2013
+        ]
+      }
+    ],
     "nfl_team": "New York Giants",
     "bio": "he's excited about getting first pick next year",
-    "notes" : "",
+    "notes": "",
     "twitter": null,
     "instagram": null
   },
-    {
+  {
     "id": "m07",
     "name": "We Get Big Ol TDs",
     "team_name": "We Get Big Ol TDs",
     "avatar_url": "../images/weget.svg",
     "active": true,
     "joined_season": 2020,
-    "previous_team_names": [
-    ],
+    "previous_team_names": [],
     "nfl_team": "Tennessee Titans",
     "bio": "Somehow alwasy has a good draft, despite being at work.",
-    "notes" : "",
+    "notes": "",
     "twitter": null,
     "instagram": null
   },
@@ -133,26 +261,24 @@
     "avatar_url": "../images/assault.png",
     "active": true,
     "joined_season": 2022,
-    "previous_team_names": [
-    ],
+    "previous_team_names": [],
     "nfl_team": "Baltimore Ravens",
     "bio": "loves to reach for rookies, but it works out.",
-    "notes" : "",
+    "notes": "",
     "twitter": null,
     "instagram": null
   },
-    {
+  {
     "id": "m10",
     "name": "Koming for the Krown",
     "team_name": "Koming for the Krown",
     "avatar_url": "../images/krown.jpg",
     "active": false,
     "joined_season": 2020,
-    "previous_team_names": [
-    ],
+    "previous_team_names": [],
     "nfl_team": "Tampa Bay Buccaneers",
     "bio": "Koming for the krown, but haven't got the chip yet.",
-    "notes" : "",
+    "notes": "",
     "twitter": null,
     "instagram": null
   },
@@ -163,15 +289,14 @@
     "avatar_url": "../images/stafford.png",
     "active": true,
     "joined_season": 2020,
-    "previous_team_names": [
-    ],
+    "previous_team_names": [],
     "nfl_team": "Detroit Lions",
     "bio": "ahhh once again victory formation.",
-    "notes" : "",
+    "notes": "",
     "twitter": null,
     "instagram": null
   },
-    {
+  {
     "id": "m12",
     "name": "Same Season Diff Team",
     "team_name": "Same Season Diff Team",
@@ -179,11 +304,20 @@
     "active": true,
     "joined_season": 2020,
     "previous_team_names": [
-      "Welp...maybe today?"
+      {
+        "name": "Welp...maybe today?",
+        "seasons": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ]
+      }
     ],
     "nfl_team": "Dallas Cowboys",
     "bio": "Always starts off with a quality draft, but ends up with a bad team.",
-    "notes" : "",
+    "notes": "",
     "twitter": "https://twitter.com/tucked_in_shirt",
     "instagram": "https://instagram.com/tucked_in_shirt"
   },
@@ -194,27 +328,38 @@
     "avatar_url": "../images/quokkas.jpg",
     "active": true,
     "joined_season": 2020,
-    "previous_team_names": [
-    ],
+    "previous_team_names": [],
     "nfl_team": "Dallas Cowboys",
     "bio": "waiver wire crumb grabber, but it works out.",
-    "notes" : "",
+    "notes": "",
     "twitter": null,
     "instagram": null
   },
-    {
-    "id": "m13",
-    "name": "Bobz Cartel",
-    "team_name": "Bobz Cartel",
+  {
+    "id": "m17",
+    "name": "AIr Superiority",
+    "team_name": "AIr Superiority",
     "avatar_url": "../images/bobzcartel.png",
     "active": true,
     "joined_season": 2020,
     "previous_team_names": [
-      "Bobzillas - 2020"
+      {
+        "name": "Bobz Cartel",
+        "seasons": [
+          2024,
+          2025
+        ]
+      },
+      {
+        "name": "Bobzillas",
+        "seasons": [
+          2020
+        ]
+      }
     ],
     "nfl_team": "Chicago Bears",
     "bio": "won the chip and ran off with the football.",
-    "notes" : "",
+    "notes": "",
     "twitter": null,
     "instagram": null
   },
@@ -225,79 +370,81 @@
     "avatar_url": "../images/nashville.png",
     "active": false,
     "joined_season": 2015,
-    "previous_team_names": [
-    ],
+    "previous_team_names": [],
     "nfl_team": "Los Angeles Rams",
     "bio": "won the chip and ran off into the sunset.",
-    "notes" : "",
+    "notes": "",
     "twitter": null,
     "instagram": null
-  }
-  ,
+  },
   {
     "id": "m15",
-    "name": "Showtime",
-    "team_name": "Showtime",
+    "name": "Josh",
+    "team_name": "Team Gipson",
     "avatar_url": "../images/showtime.png",
     "active": false,
     "joined_season": 2020,
     "previous_team_names": [
+      {
+        "name": "Team Gipson",
+        "seasons": [
+          2011
+        ]
+      }
     ],
-    "nfl_team": "Los Angeles Lakers lol",
+    "nfl_team": "",
     "bio": "filled in the spot for a friend, solid community service.",
-    "notes" : "",
+    "notes": "",
     "twitter": null,
     "instagram": null
-  }
-    ,
+  },
   {
-    "id": "m15",
+    "id": "m18",
     "name": "UdaiFade",
     "team_name": "UdaiFade",
     "avatar_url": "../images/udai.png",
     "active": false,
     "joined_season": 2018,
     "previous_team_names": [
-      "Win Column UDAI"
+      {
+        "name": "Win Column UDAI",
+        "seasons": [
+          2018
+        ]
+      }
     ],
     "nfl_team": "St. Louis Rams",
     "bio": "quit the league before the championship matchup even started. lol.",
-    "notes" : "",
+    "notes": "",
     "twitter": null,
     "instagram": null
   },
-    {
+  {
     "id": "m16",
     "name": "Roach",
     "team_name": "Roach",
     "avatar_url": "../images/sameseason.svg",
     "active": false,
     "joined_season": 2016,
-    "previous_team_names": [
-    ],
+    "previous_team_names": [],
     "nfl_team": "Dallas Cowboys",
     "bio": "",
-    "notes" : "",
+    "notes": "",
     "twitter": null,
     "instagram": null
   },
   {
-    "id": "m16",
+    "id": "m19",
     "name": "DreaM BiG",
     "team_name": "DreaM BiG",
     "avatar_url": "../images/udai.png",
     "active": false,
     "joined_season": 2016,
-    "previous_team_names": [
-    ],
+    "previous_team_names": [],
     "nfl_team": "Peyton Manning Fan Club",
     "bio": "",
-    "notes" : "",
+    "notes": "",
     "twitter": null,
     "instagram": null
   }
-  
-
-
-
 ]
