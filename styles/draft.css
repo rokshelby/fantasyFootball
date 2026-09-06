@@ -59,21 +59,20 @@
 }
 .managerBlock {
   display: flex;
-  align-items: flex-start; /* keeps text aligned with top of image */
-   /* space between text and image */
-  gap: 30px;
+  flex-direction: column; /* gif on top, description below */
+  align-items: center;
+  gap: 15px;
 }
 
 .managerBlock p {
-  
   margin: 0;
-  width: 300px;
+  width: 100%;
 }
 
 .managerBlock img {
-  width: 300px; /* control size */
+  width: 100%; /* control size */
   height: 200px;
-  
+  object-fit: cover;
   border-radius: 8px;
 }
 
