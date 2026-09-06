@@ -18,7 +18,7 @@ async function loadDraftAnalysis(year) {
       pickDiv.className = 'managerBlock';
       pickDiv.innerHTML = `
       <img src= ${manager.image}>
-      <p><strong> ${manager.name}</strong> <br> Draft Grade: <strong> ${manager.draftgrade} </strong> <br>
+      <p><strong> ${manager.name}</strong> <br> Draft Grade: <span class="draft-grade">${manager.draftgrade}</span> <br>
       ${manager.description}</p>`;
       managerDiv.appendChild(pickDiv);
 
