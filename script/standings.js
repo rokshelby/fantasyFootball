@@ -2,7 +2,7 @@ const managerColors = {
   "Commishin aint easy": "blue",
   "Same Season Diff Team": "red",
   "Dicker Downs": "green",
-  "Tig Ol Griddys": "orange",
+  "Im Sorry Miss Jackson": "orange",
   "We Get Big Ol TDs": "purple",
   "SF 49ers Played Me": "teal",
   "Bobz Cartel": "pink",

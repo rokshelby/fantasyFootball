@@ -1,75 +1,106 @@
 {
+  "week": 4,
+  "tiers": [
+    "Schedule Monster",
+    "Playoff Bound",
+    "In the Mix",
+    "Bottom Feeders"
+  ],
   "managers": [
     {
       "name": "Same Season Diff Team",
+      "record": "2-2",
+      "tier": "Playoff Bound",
       "draftgrade": "B+",
-      "description": "I just made the connection that your fantasy football team is like your real life team. Got all the potential. Just can't get it done. 😂. I'm rooting for you dog. " ,
+      "description": "Scored the most points, but still only 2-2. Tough break. Better days ahead.",
       "image": "https://media1.tenor.com/m/sL0_X0-SpEUAAAAC/pinocchio-nose-growing.gif"
     },
     {
       "name": "Sutton On My Face",
+      "record": "2-2",
+      "tier": "In the Mix",
       "draftgrade": "C+",
-      "description": "Solid Bench maneuvering. The Travis Kelce pick up is nasty. Deducting points for the Jeanty pickup.",
+      "description": "Teams good, but not great. Nice handcuffing CMC.",
       "image": "https://media.tenor.com/cEQefkKwMVkAAAA1/mendoza-fernando.webp"
     },
     {
       "name": "4XCallowayIAM",
+      "record": "1-3",
+      "tier": "Bottom Feeders",
       "draftgrade": "C-",
-      "description": "The streets are saying you only a three time champ. I hope you not thinking you going to win this year lol. I like the eagle stack. I think your bench is weak. I also believe your team will fizzle out, just a gut feeling.",
+      "description": "You was pumped at the beginning of the season, now you on the struggle bus. Double Packer WR. Nasty. Currently Top Waiver Wire picker. You in trouble this year.",
       "image": "https://media1.tenor.com/m/2508I8UlwSMAAAAd/cam-skattebo-giants.gif"
     },
     {
       "name": "Im Sorry Miss Jackson",
+      "record": "2-2",
+      "tier": "Bottom Feeders",
       "draftgrade": "D",
-      "description": "You just can't quit chase. You're weak at RB. I bet you could trade with We Get Big Ol TDs cuz he loves TEN. lol",
+      "description": "Plagued by injuries. Looking forward to our match week 9.",
       "image": "https://media1.tenor.com/m/z9SMSbjHNoEAAAAC/ja%27marr-chase-always-open.gif"
     },
     {
       "name": "We Get Big Ol TDs",
+      "record": "2-2",
+      "tier": "In the Mix",
       "draftgrade": "F",
-      "description": "Decent squad, but i'm deducting all points for having have three too many shares of your home team. LMAO",
+      "description": "I see you dropped most of your Tennessee shares. Good job. With Bijan you'll be a contender.",
       "image": "https://media1.tenor.com/m/QbMBKxFW7p8AAAAC/cam-ward-tennessee-titans.gif"
     },
     {
       "name": "Alabama Assault",
+      "record": "3-1",
+      "tier": "Playoff Bound",
       "draftgrade": "C-",
-      "description": "Thanks for drafting seriously this year. I'm not sold on Devante, and you can't help but draft the whole rookie class. Your patience is commendable.",
+      "description": "Doing good. Making good waiver wire moves. Clearly you locked in. Go get distracted.",
       "image": "https://media1.tenor.com/m/3OZu_n2PL-QAAAAd/star-wars-yoda.gif"
     },
     {
       "name": "Grin and Bear the Swift Justice",
+      "record": "1-3",
+      "tier": "Bottom Feeders",
       "draftgrade": "C+",
-      "description": "I hope Nabers is healthy. Weak at RB. Going to have lineup decisions consistently, which isn't surprising, because you live off lineup decisions.",
+      "description": "I see you are failing at making the good lineup decisions. I did say you was weak at RB. The IF man Herbert let you down. ",
       "image": "https://media1.tenor.com/m/9ppNC0UBHbUAAAAd/charlie-day-its-always-sunny-in-philadelphia.gif"
     },
     {
       "name": "AIr Superiority",
+      "record": "3-1",
+      "tier": "In the Mix",
       "draftgrade": "F",
-      "description": "I do not foresee greatness out of your squad. Definitely bottom feeder energy. Bottom Dweller if you will.",
+      "description": "Doing way better than I projected. JSN ust be carrying you. I still dont see it. ",
       "image": "https://media.tenor.com/tw3pbRi84ngAAAAM/bugs-bunny-albuquerque.gif"
     },
     {
       "name": "Caleb and The Revolution",
+      "record": "2-2",
+      "tier": "Playoff Bound",
       "draftgrade": "A",
-      "description": "Gross. Solid squad. I hope you fail. lol. Also deducting .25 points for the DJ Moore pickup. Still got some bear down residue.",
+      "description": "My projections were wrong. You're doing just okay. lol. Good.",
       "image": "https://i.redd.it/263jokju5i8g1.gif"
     },
     {
       "name": "Stafford Infection",
+      "record": "1-3",
+      "tier": "Bottom Feeders",
       "draftgrade": "C+",
       "description": "I see someone believes in Maserati Marv. Deducting -0.25 points for the Stafford pickup. It's really a balanced roster. I think you going to strive off consistenecy. Bland but solid.",
       "image": "https://media1.tenor.com/m/T-J19qmFW80AAAAd/bland-as-fuck-sungwon-cho.gif"
     },
     {
       "name": "Stew's Super Quokkas",
+      "record": "2-2",
+      "tier": "Playoff Bound",
       "draftgrade": "B",
-      "description": "I see Waiver wire Stew got your boy Cedarian. Solid team here. I think you're going to be a dark horse this year. Drafting Joey Burrows is unnecessary. ",
+      "description": "Doing about as expected.",
       "image": "https://media1.tenor.com/m/yxkI_lD6eCIAAAAC/joe-burrow-cigar-bengals.gif"
     },
     {
       "name": "Commishin aint Easy",
+      "record": "3-1",
+      "tier": "Schedule Monster",
       "draftgrade": "C",
-      "description": "I was playing defense the whole draft. Brock Bowers, Jordan Love. Just nasty. I need ROMEy Rome to be great! ",
+      "description": "Currently 1st in the standings, which is a surprise. I have had a good schedule so far. ",
       "image": "https://media1.tenor.com/m/Gw7IDacjt_4AAAAd/jerome-xmas.gif"
     }
   ]

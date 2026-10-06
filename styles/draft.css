@@ -113,3 +113,26 @@
     max-width: 300px; /* prevent it from getting too huge */
   }
 }
+/* Week analysis tiers (week-analysis.html) */
+.tier-section {
+  margin-bottom: 40px;
+}
+
+.tier-title {
+  text-align: left;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #1e3a8a;
+}
+
+.tier-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 750px) {
+  .tier-grid {
+    grid-template-columns: 1fr;
+  }
+}

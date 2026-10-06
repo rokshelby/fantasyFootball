@@ -166,12 +166,19 @@
   },
   {
     "id": "m05",
-    "name": "Tig Ol Griddys",
-    "team_name": "Tig Ol Griddys",
+    "name": "Im Sorry Miss Jackson",
+    "team_name": "Im Sorry Miss Jackson",
     "avatar_url": "../images/tig.png",
     "active": true,
     "joined_season": 2020,
     "previous_team_names": [
+      {
+        "name": "Tig Ol Griddys",
+        "seasons": [
+          2024,
+          2025
+        ]
+      },
       {
         "name": "How I Metcalf Your Mother",
         "seasons": [
