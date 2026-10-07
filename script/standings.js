@@ -20,7 +20,7 @@ function colorFor(name, index) {
 }
 
 // Years with a full regular season archived at archive/<year>/matches<year>.json
-const STANDINGS_YEARS = [2025, 2024, 2023, 2022, 2021, 2020];
+const STANDINGS_YEARS = [2026,2025, 2024, 2023, 2022, 2021, 2020];
 
 let rankChart, pointsChart;
 let aliasMapPromise;
