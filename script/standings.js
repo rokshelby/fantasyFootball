@@ -9,7 +9,7 @@ const managerColors = {
   "Caleb and The Revolution": "brown",
   "Stafford Infection": "cyan",
   "Stew's Super Quokkas": "magenta",
-  "Alabama Assault": "lime",
+  "Montgomery Mollywops": "lime",
   "4XCAllowayIAM": "yellow"
 };
 

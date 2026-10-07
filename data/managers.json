@@ -263,12 +263,22 @@
   },
   {
     "id": "m08",
-    "name": "Alabama Assault",
-    "team_name": "Alabama Assault",
+    "name": "Montgomery Mollywops",
+    "team_name": "Montgomery Mollywops",
     "avatar_url": "../images/assault.png",
     "active": true,
     "joined_season": 2022,
-    "previous_team_names": [],
+    "previous_team_names": [
+      {
+        "name": "Alabama Assault",
+        "seasons": [
+          2022,
+          2023,
+          2024,
+          2025
+        ]
+      }
+    ],
     "nfl_team": "Baltimore Ravens",
     "bio": "loves to reach for rookies, but it works out.",
     "notes": "",
