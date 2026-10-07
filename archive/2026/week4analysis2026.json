@@ -1,0 +1,107 @@
+{
+  "week": 4,
+  "tiers": [
+    "Schedule Monster",
+    "Playoff Bound",
+    "In the Mix",
+    "Bottom Feeders"
+  ],
+  "managers": [
+    {
+      "name": "Same Season Diff Team",
+      "record": "2-2",
+      "tier": "Playoff Bound",
+      "draftgrade": "B+",
+      "description": "Scored the most points, but still only 2-2. Tough break. Better days ahead. Dem Boys super shaky though.",
+      "image": "https://media1.tenor.com/m/kZdMHvgHWWwAAAAC/dak-prescott-dak.gif"
+    },
+    {
+      "name": "Sutton On My Face",
+      "record": "2-2",
+      "tier": "In the Mix",
+      "draftgrade": "C+",
+      "description": "Teams good, but not great. Nice handcuffing CMC. Kirko got y'all going places.",
+      "image": "https://media.tenor.com/NesS9xY8_McAAAAM/kirk-cousins.gif"
+    },
+    {
+      "name": "4XCallowayIAM",
+      "record": "1-3",
+      "tier": "Bottom Feeders",
+      "draftgrade": "C-",
+      "description": "You was pumped at the beginning of the season, now you on the struggle bus 🚌. Double Packer WR. Nasty. Currently Top Waiver Wire picker. You in trouble this year.",
+      "image": "https://media.tenor.com/epU9cy1CZKMAAAAM/jameis-winston-jameis.gif"
+    },
+    {
+      "name": "Im Sorry Miss Jackson",
+      "record": "2-2",
+      "tier": "In the Mix",
+      "draftgrade": "D",
+      "description": "Plagued by injuries. Looking forward to our match week 9. Also glad to see them patriots looking mid.",
+      "image": "https://media.tenor.com/QFLeZbYDA1kAAAAM/drake-maye-drake-maybe.gif"
+    },
+    {
+      "name": "We Get Big Ol TDs",
+      "record": "2-2",
+      "tier": "In the Mix",
+      "draftgrade": "F",
+      "description": "I see you dropped most of your Tennessee shares. Good job. With Bijan you'll be a contender.",
+      "image": "https://media1.tenor.com/m/fuUMTGzo0hQAAAAd/cam-ward-ward.gif"
+    },
+    {
+      "name": "Montgomery Mollywops",
+      "record": "3-1",
+      "tier": "Playoff Bound",
+      "draftgrade": "C-",
+      "description": "Doing good. Making good waiver wire moves. Clearly you locked in. Go get distracted.",
+      "image": "https://media1.tenor.com/m/Lvyn6dFs7LsAAAAd/lamar-jackson.gif"
+    },
+    {
+      "name": "Grin and Bear the Swift Justice",
+      "record": "1-3",
+      "tier": "Bottom Feeders",
+      "draftgrade": "C+",
+      "description": "I see you are failing at making the good lineup decisions. The group chat noticed you've been quite since week1. No victory formation, just humble pie. 🥧 LMAO.",
+      "image": "https://media.tenor.com/xIgcBfIH0S0AAAA1/giants-wtf.webp"
+    },
+    {
+      "name": "AIr Superiority",
+      "record": "3-1",
+      "tier": "In the Mix",
+      "draftgrade": "F",
+      "description": "Doing way better than I projected. JSN must be carrying you. I still dont see it. ",
+      "image": "https://media1.tenor.com/m/4CZCVvAIuQkAAAAd/chicago-bears-tyson-bagent.gif"
+    },
+    {
+      "name": "Caleb and The Revolution",
+      "record": "2-2",
+      "tier": "Playoff Bound",
+      "draftgrade": "A",
+      "description": "My projections were wrong. You're doing just okay. lol. Good.",
+      "image": "https://media1.tenor.com/m/zyQttadx1Z8AAAAd/case-keenum-bears.gif"
+    },
+    {
+      "name": "Stafford Infection",
+      "record": "1-3",
+      "tier": "Bottom Feeders",
+      "draftgrade": "C+",
+      "description": "Team is cheeks just like your NFL team. Bryce and them saw to that. That's all I got for you. Its embarassing that my team lost to yours, But I was down puka and bowers.",
+      "image": "https://media1.tenor.com/m/vrxu4RW8qPIAAAAC/we-suck-again-oh-no.gif"
+    },
+    {
+      "name": "Stew's Super Quokkas",
+      "record": "2-2",
+      "tier": "Playoff Bound",
+      "draftgrade": "B",
+      "description": "Doing about as expected, which is unfortunate. Since I have no shade for your FF squad, your Cowboys are a mess.",
+      "image": "https://media1.tenor.com/m/nBi773yUBVIAAAAd/cowboys-dallas-cowboys.gif"
+    },
+    {
+      "name": "Commishin aint Easy",
+      "record": "3-1",
+      "tier": "Schedule Monster",
+      "draftgrade": "C",
+      "description": "Currently 1st in the standings, which is a surprise. I have had a good schedule so far. ",
+      "image": "https://media1.tenor.com/m/bXJ0B11E-vIAAAAC/rich-dave-chappelle.gif"
+    }
+  ]
+}
