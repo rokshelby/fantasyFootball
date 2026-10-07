@@ -1,24 +1,25 @@
-// Loads archive/<year>/week<week>analysis<year>.json and groups managers by tier.
-// Link to a specific file with week-analysis.html?year=2026&week=4
+// Loads archive/<year>/q<quarter>report<year>.json and groups managers by tier.
+// Link to a specific report with quarterly-report.html?year=2026&q=1
 const DEFAULT_YEAR = 2026;
-const DEFAULT_WEEK = 4;
+const DEFAULT_QUARTER = 1;
 
 document.addEventListener('DOMContentLoaded', () => {
   const params = new URLSearchParams(window.location.search);
   const year = params.get('year') || DEFAULT_YEAR;
-  const week = params.get('week') || DEFAULT_WEEK;
-  loadWeekAnalysis(year, week);
+  const quarter = params.get('q') || DEFAULT_QUARTER;
+  loadQuarterlyReport(year, quarter);
 });
 
-async function loadWeekAnalysis(year, week) {
-  const title = document.getElementById('week-analysis-title');
-  const container = document.getElementById('week-analysis-container');
-  title.textContent = `${year} Week ${week} Analysis`;
+async function loadQuarterlyReport(year, quarter) {
+  const title = document.getElementById('quarterly-report-title');
+  const container = document.getElementById('quarterly-report-container');
+  title.textContent = `${year} Q${quarter} Report`;
 
   try {
-    const response = await fetch(`archive/${year}/week${week}analysis${year}.json`);
+    const response = await fetch(`archive/${year}/q${quarter}report${year}.json`);
     if (!response.ok) throw new Error('Network response was not ok');
     const data = await response.json();
+    if (data.weeks) title.textContent += ` (Weeks ${data.weeks})`;
 
     // Tiers render in the order listed in the JSON; managers with a missing or
     // unknown tier land in "Unranked" at the bottom.
@@ -64,7 +65,7 @@ async function loadWeekAnalysis(year, week) {
       container.appendChild(tierSection);
     });
   } catch (err) {
-    console.error('Error loading week analysis:', err);
-    container.innerHTML = '<p>Analysis not available.</p>';
+    console.error('Error loading quarterly report:', err);
+    container.innerHTML = '<p>Report not available.</p>';
   }
 }
