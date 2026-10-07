@@ -1,5 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+  // When a page is shown inside another page's iframe (e.g. on index.html),
+  // skip its header/footer and just follow the parent page's theme.
+  if (window.self !== window.top) {
+    const applyTheme = () =>
+      document.body.classList.toggle('dark-mode', localStorage.getItem('theme') === 'dark');
+    applyTheme();
+    window.addEventListener('storage', e => { if (e.key === 'theme') applyTheme(); });
+
+    const footer = document.querySelector('.site-footer');
+    if (footer) footer.style.display = 'none';
+    return;
+  }
+
   // Load header first
   fetch("header.html")
     .then(res => {
